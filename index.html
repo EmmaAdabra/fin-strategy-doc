@@ -1,0 +1,2678 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A3D62" id="themeColorMeta" />
+  <meta name="description" content="A foundational personal wealth strategy for a 31-year-old Nigerian MSc student in the UK: covering ISAs, LISAs, SIPPs, ETFs, Nigerian MMFs &amp; REITs, currency strategy, tax, and a two-phase tactical plan." />
+  <title>Personal Wealth Strategy: Foundation Document</title>
+
+  <!-- Theme bootstrap: apply saved/preferred theme before any paint to prevent FOUC -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'dark' ? '#0F1620' : '#0A3D62');
+        // Stash so script.js can sync icons without re-reading localStorage.
+        window.__initialTheme = theme;
+      } catch (e) { /* localStorage may be blocked; fall back to light */ }
+    })();
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- AOS (animate on scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Project styles -->
+  <link rel="stylesheet" href="assets/styles.css?v=2" />
+</head>
+<body>
+
+<!-- ============================================================
+     TOP BAR + READING PROGRESS
+============================================================ -->
+<header class="topbar" role="banner">
+  <div class="topbar__inner">
+    <a class="topbar__brand" href="#top">
+      <span class="topbar__brand-mark">£₦</span>
+      <span>Wealth Strategy · Foundation</span>
+    </a>
+    <div class="topbar__actions">
+      <button class="topbar__btn" id="tocToggle" aria-label="Open table of contents">Contents</button>
+      <button class="topbar__btn" id="printBtn" aria-label="Print the summary card">Print Card</button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode" style="appearance:none;-webkit-appearance:none;width:38px;height:38px;min-width:38px;padding:0;margin:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--color-line-strong);color:var(--color-text);cursor:pointer;line-height:0;font-size:0;">
+        <svg id="iconMoon" class="theme-toggle__icon theme-toggle__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="display:block;">
+          <path fill="none" stroke="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg id="iconSun" class="theme-toggle__icon theme-toggle__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="display:none;">
+          <circle fill="none" stroke="currentColor" cx="12" cy="12" r="4"/>
+          <line x1="12" y1="2" x2="12" y2="4" stroke="currentColor"/>
+          <line x1="12" y1="20" x2="12" y2="22" stroke="currentColor"/>
+          <line x1="4.93" y1="4.93" x2="6.34" y2="6.34" stroke="currentColor"/>
+          <line x1="17.66" y1="17.66" x2="19.07" y2="19.07" stroke="currentColor"/>
+          <line x1="2" y1="12" x2="4" y2="12" stroke="currentColor"/>
+          <line x1="20" y1="12" x2="22" y2="12" stroke="currentColor"/>
+          <line x1="4.93" y1="19.07" x2="6.34" y2="17.66" stroke="currentColor"/>
+          <line x1="17.66" y1="6.34" x2="19.07" y2="4.93" stroke="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+</header>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<main id="top">
+<section class="hero">
+  <div class="container hero__inner" data-aos="fade-up">
+    <div class="hero__eyebrow">A Foundational Plan · Updated 26 May 2026</div>
+    <h1 class="hero__title">Personal Wealth Strategy</h1>
+    <p class="hero__subtitle">
+      Sound financial security, money working for you, early retirement, and a life of chosen,
+      meaningful work, engineered for a 31-year-old Nigerian MSc student in the United Kingdom.
+    </p>
+
+    <div class="hero__meta">
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">For</span>
+        <span class="hero__meta-value">31-yr Nigerian MSc, UK</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Status</span>
+        <span class="hero__meta-value">UK tax resident · NIN held</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Visa</span>
+        <span class="hero__meta-value">MSc → 2-yr Graduate Route</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Goal</span>
+        <span class="hero__meta-value">Financial Independence</span>
+      </div>
+    </div>
+
+    <div class="hero__update" data-aos="fade-up" data-aos-delay="150">
+      <strong>Update (26 May 2026):</strong> User confirmed Graduate Route (2-yr PSW) is the plan, post-PSW
+      undecided, and Nigerian financial rails (banks, BVN, NIN, address) remain active. This is a
+      <em>good</em> setup, because it lets us optimise UK tax-advantaged accounts (since you are UK tax resident
+      now) <em>and</em> keep Nigerian financial access warm. Sections 9.5 and 9.6 cover Nigerian Money
+      Market Funds and Real Estate Funds in detail, both because you may want to use them and because
+      every Nigerian investor should know what's available "back home."
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 0 FOREWORD
+============================================================ -->
+<section class="section" id="s0">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 0</span>
+      <h2 class="section__title">Foreword: Read This Before Anything Else</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar" aria-hidden="true">U</div>
+        <div class="chat__body">
+          <div class="chat__author">You</div>
+          Before you tell me what to do, what should I actually internalise first?
+        </div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar" aria-hidden="true">A</div>
+        <div class="chat__body">
+          <div class="chat__author">Advisor</div>
+          A few hard truths. If you accept these six points, the rest of this document is the engineering.
+          If you don't accept them, no document will help.
+        </div>
+      </div>
+    </div>
+
+    <ol class="principles">
+      <li class="principle"><div class="principle__body"><strong>There is no shortcut.</strong> Anyone selling shortcuts is selling you risk dressed up as opportunity.</div></li>
+      <li class="principle"><div class="principle__body"><strong>Compounding is real but slow.</strong> Most wealth happens in the last 10 years of a 25-year journey, not the first 5. If you start at 31 with discipline, you have just enough runway. Start at 41 and the math is brutal.</div></li>
+      <li class="principle"><div class="principle__body"><strong>The single biggest variable is <em>savings rate</em>, not investment returns.</strong> Saving 40% of your income at 6% returns beats saving 10% at 12% returns over almost any timeframe.</div></li>
+      <li class="principle"><div class="principle__body"><strong>Your most valuable asset right now is your career, not any portfolio.</strong> Earning £50k–£100k+ in a UK tech role over 10–15 years is worth more than any clever stock-picking. Protect your career trajectory; it is your investment goose.</div></li>
+      <li class="principle"><div class="principle__body"><strong>"Early retirement" is not what TikTok shows you.</strong> Realistic early retirement = the freedom to stop being <em>forced</em> to work, not lying on a beach at 35. The proper name for what you want is <strong>"Financial Independence" (FI)</strong>. Retirement is optional after that.</div></li>
+      <li class="principle"><div class="principle__body"><strong>You are not late.</strong> 31 is fine. You are early enough that the math works, <em>if</em> you start now and stay disciplined.</div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 1 MONEY WORKING FOR YOU
+============================================================ -->
+<section class="section" id="s1">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 1</span>
+      <h2 class="section__title">What "Money Working for You" Actually Means</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body">
+          <div class="chat__author">You</div>
+          What does "money working for you" actually mean?
+        </div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body">
+          <div class="chat__author">Advisor</div>
+          The phrase sounds magical. It isn't. Here's the boring reality.
+        </div>
+      </div>
+    </div>
+
+    <p class="lead"><strong>Definition:</strong> Money works for you when <em>the assets you own</em> generate
+      returns (price appreciation, dividends, interest, rent) that grow faster than inflation and faster
+      than your spending, <em>without you doing additional work</em>.</p>
+
+    <h3>The four ways money makes money</h3>
+
+    <div class="mech-grid">
+      <div class="mech">
+        <div class="mech__icon">L</div>
+        <h4 class="mech__title">Lending</h4>
+        <p class="mech__desc">Bank deposits, government bonds, money market funds, corporate bonds.</p>
+        <div class="mech__meta">
+          <div><div class="mech__meta-label">Yield</div><div class="mech__meta-value">1–8% (UK), 15–22% (NG)</div></div>
+          <div><div class="mech__meta-label">Risk</div><div class="mech__meta-value">Low–Medium</div></div>
+        </div>
+      </div>
+      <div class="mech">
+        <div class="mech__icon">O</div>
+        <h4 class="mech__title">Business Ownership</h4>
+        <p class="mech__desc">Shares of public companies (stocks), ETFs, equity funds.</p>
+        <div class="mech__meta">
+          <div><div class="mech__meta-label">Yield</div><div class="mech__meta-value">~7–10% real long-term</div></div>
+          <div><div class="mech__meta-label">Risk</div><div class="mech__meta-value">Medium–High</div></div>
+        </div>
+      </div>
+      <div class="mech">
+        <div class="mech__icon">R</div>
+        <h4 class="mech__title">Real Assets</h4>
+        <p class="mech__desc">Real estate, REITs, infrastructure, commodities (gold, etc.).</p>
+        <div class="mech__meta">
+          <div><div class="mech__meta-label">Yield</div><div class="mech__meta-value">Rent + appreciation</div></div>
+          <div><div class="mech__meta-label">Risk</div><div class="mech__meta-value">Medium</div></div>
+        </div>
+      </div>
+      <div class="mech">
+        <div class="mech__icon">P</div>
+        <h4 class="mech__title">Private Businesses</h4>
+        <p class="mech__desc">Your own business, private equity, angel investing.</p>
+        <div class="mech__meta">
+          <div><div class="mech__meta-label">Yield</div><div class="mech__meta-value">Profits + exit</div></div>
+          <div><div class="mech__meta-label">Risk</div><div class="mech__meta-value">Very High</div></div>
+        </div>
+      </div>
+    </div>
+
+    <p>For someone in your stage (early career, no big lump sum yet, salary will grow over time), the
+      <strong>first two</strong> are 95% of the story. The third can be added later via low-effort vehicles
+      (REITs). The fourth comes much later, if at all.</p>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Stop thinking about "stocks" as one big thing. Think in terms of <em>what role each holding plays</em>:
+        lending (safety + income), ownership (growth), real assets (diversification). A good portfolio has
+        all three in proportions appropriate to your stage of life.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 2 THE MATH OF FIRE
+============================================================ -->
+<section class="section" id="s2">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 2</span>
+      <h2 class="section__title">The Math of Early Retirement / Financial Independence</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body">
+          <div class="chat__author">You</div>
+          What's the actual math behind "early retirement"?
+        </div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body">
+          <div class="chat__author">Advisor</div>
+          It collapses to a single number: <strong>25× your annual expenses</strong>. The rest is
+          working backwards from there.
+        </div>
+      </div>
+    </div>
+
+    <h3>2.1 · The 25× rule (also called the 4% rule)</h3>
+    <p>The classic finding from US academic research (Trinity Study, 1998, updated multiple times):
+      <strong>if you invest in a diversified equity/bond portfolio and withdraw 4% of the initial value per
+      year, adjusted for inflation, your portfolio has a ~95% chance of lasting 30+ years.</strong>
+      Reversing the math: you need <strong>~25× your annual expenses</strong> invested to be financially
+      independent.</p>
+
+    <h3>2.2 · Worked examples for you</h3>
+    <p>Assume you want to retire in the UK with a comfortable but not extravagant lifestyle
+      (£30,000/year today). Adjusting for ~2.5% UK inflation, that becomes:</p>
+
+    <div class="chart-card" data-aos="fade-up">
+      <div class="chart-card__title">Portfolio size needed at retirement</div>
+      <div class="chart-card__sub">Target: £30,000/year today's spending, inflated 2.5% to retirement age, multiplied by 25.</div>
+      <div class="chart-canvas-wrap"><canvas id="chartTargets"></canvas></div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-caption">Reverse-engineering the FI number from a target retirement age</div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Target retirement age</th><th>Years from now</th><th>Target annual expenses (today's £)</th><th>Inflation-adjusted target</th><th>Portfolio needed at that age</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>50</td><td>19</td><td>£30,000</td><td>~£48,000</td><td><strong>~£1.2 million</strong></td></tr>
+            <tr><td>55</td><td>24</td><td>£30,000</td><td>~£54,000</td><td><strong>~£1.35 million</strong></td></tr>
+            <tr><td>60</td><td>29</td><td>£30,000</td><td>~£61,000</td><td><strong>~£1.53 million</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h3>2.3 · Required monthly savings (assumes 7% real return: historical S&amp;P 500 average after inflation)</h3>
+
+    <div class="chart-card" data-aos="fade-up">
+      <div class="chart-card__title">Monthly investment required to hit each FI target</div>
+      <div class="chart-card__sub">At 7% real return. Lower target age = bigger monthly bill.</div>
+      <div class="chart-canvas-wrap"><canvas id="chartMonthly"></canvas></div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Target</th><th>Monthly investment needed</th><th>What it really means</th></tr></thead>
+          <tbody>
+            <tr><td><strong>£1.2m by 50 (19 yrs)</strong></td><td>~£2,500/mo (today's £)</td><td>Aggressive. Requires high UK salary + low UK expenses.</td></tr>
+            <tr><td><strong>£1.35m by 55 (24 yrs)</strong></td><td>~£1,650/mo</td><td>Reasonable for a mid-career UK tech professional.</td></tr>
+            <tr><td><strong>£1.53m by 60 (29 yrs)</strong></td><td>~£1,150/mo</td><td>Quite achievable on a decent UK tech salary.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h3>2.4 · The two harsh constants</h3>
+    <ul>
+      <li><strong>You cannot escape time.</strong> Compounding needs decades. The closer to "early," the more brutal the monthly number.</li>
+      <li><strong>You cannot escape returns.</strong> If you put your money in cash (1–4%) instead of equities (~7% real long-term), the numbers above multiply by 2–3×.</li>
+    </ul>
+
+    <h3>2.5 · The FIRE variants (terms you'll see online)</h3>
+    <div class="grid grid--2">
+      <div class="card">
+        <div class="card__label">Lean FIRE</div>
+        <div class="card__value">£500k–£700k</div>
+        <div class="card__desc">Retire on bare minimum (~£20k/year).</div>
+      </div>
+      <div class="card">
+        <div class="card__label">Regular FIRE</div>
+        <div class="card__value">£800k–£1.5m</div>
+        <div class="card__desc">Retire comfortably (~£30–50k/year).</div>
+      </div>
+      <div class="card">
+        <div class="card__label">Fat FIRE</div>
+        <div class="card__value">£2m+</div>
+        <div class="card__desc">Retire luxuriously (£75k+/year).</div>
+      </div>
+      <div class="card">
+        <div class="card__label">Coast FIRE</div>
+        <div class="card__value">Front-load</div>
+        <div class="card__desc">Save aggressively early; let it compound; stop adding.</div>
+      </div>
+      <div class="card">
+        <div class="card__label">Barista FIRE</div>
+        <div class="card__value">Semi-retire</div>
+        <div class="card__desc">Cover most expenses from portfolio, work part-time for the rest.</div>
+      </div>
+    </div>
+
+    <p>For someone with your profile (well-paid UK tech role + relatively young + lower lifestyle costs early),
+      <strong>Coast FIRE between 50–55 then transition to Barista FIRE</strong> is one of the most realistic
+      and humane paths.</p>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Your true goal is a <em>number</em>, not a <em>date</em>. Pick the lifestyle you actually want and
+        reverse-engineer the savings needed. Then build the rest of your life around hitting it. The number,
+        not the date, is what frees you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 3 PREREQUISITES
+============================================================ -->
+<section class="section" id="s3">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 3</span>
+      <h2 class="section__title">The Three Things You MUST Have Before Investing</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>What must I have before I put a single pound into an ETF?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>Three non-negotiables. Skipping them is the most common reason people lose at investing despite picking good investments.</div>
+      </div>
+    </div>
+
+    <h3>3.1 · An Emergency Fund (3–6 months of expenses)</h3>
+    <p><strong>What it is:</strong> Cash you can access within 24 hours, in a separate account from your
+      day-to-day spending. Boring, but it is the single most important financial decision you will ever make.</p>
+    <p><strong>Why:</strong> Life will throw a £1,500 dental bill / car breakdown / lost job / family emergency
+      at you. Without an emergency fund, you sell investments at the worst time (probably when the market has
+      dropped, locking in losses). With it, your investments compound undisturbed.</p>
+    <p><strong>Where:</strong> UK high-interest savings accounts (~4–5% as of 2026). Examples:
+      <a href="https://www.chase.co.uk/gb/en/savings/" target="_blank" rel="noopener">Chase UK saver</a>,
+      <a href="https://www.trading212.com/cash-isa" target="_blank" rel="noopener">Trading 212 cash interest account</a>,
+      <a href="https://www.marcus.co.uk/" target="_blank" rel="noopener">Marcus by Goldman Sachs</a>,
+      <a href="https://getchip.uk/" target="_blank" rel="noopener">Chip</a>. Or a <strong>Cash ISA</strong>
+      (tax-free, up to £20,000/year in 2026/27, though the cap drops to £12,000 from April 2027 for under-65s).
+      <a href="https://www.gov.uk/individual-savings-accounts" target="_blank" rel="noopener">[gov.uk ISA rules]</a></p>
+    <p><strong>Target amount:</strong> 3 months minimum, 6 months ideal. For a UK student living on
+      ~£1,500/month → £4,500–£9,000.</p>
+
+    <h3>3.2 · Adequate Insurance</h3>
+    <p>You don't have a UK family yet. But:</p>
+    <ul>
+      <li><strong>NHS</strong> covers most healthcare while you have UK residency. You're fine on health.</li>
+      <li><strong>Critical illness / income protection</strong>: worth considering once you start working full-time. Cancer at 35 with no insurance = financial wipeout.</li>
+      <li><strong>Travel insurance</strong> for trips home.</li>
+      <li><strong>Life insurance</strong>: usually only worth buying when you have dependents.</li>
+    </ul>
+
+    <h3>3.3 · Zero High-Interest Debt</h3>
+    <p>Before any investment:</p>
+    <ul>
+      <li>Pay off any credit cards (UK credit card APRs ~20–35%).</li>
+      <li>Buy Now Pay Later (Klarna, Clearpay): pay off immediately.</li>
+      <li>Personal loans above 8%: pay aggressively.</li>
+    </ul>
+    <p><strong>Exception:</strong> UK student loans are <em>different</em>. UK government student loans are
+      repaid based on income (9% of income above a threshold), forgiven after a set period (30–40 years), and
+      the interest doesn't behave like a regular loan. If you have UK student loans,
+      <strong>don't aggressively prepay them</strong>; treat them like a graduate tax.
+      <a href="https://www.gov.uk/repaying-your-student-loan" target="_blank" rel="noopener">[gov.uk student loan rules]</a>
+      Nigerian/private loans are different; those should be paid down faster.</p>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Before you put one pound into any ETF or stock, make sure: (a) you have 3–6 months of expenses in a
+        Cash ISA or savings account, (b) you have no credit-card or BNPL debt, (c) you know your insurance
+        situation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 4 UK TAX WRAPPERS
+============================================================ -->
+<section class="section" id="s4">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 4</span>
+      <h2 class="section__title">Your Single Biggest Edge: UK Tax-Advantaged Accounts</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>What's the biggest financial edge I get from being in the UK that I wouldn't have in Nigeria?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>Three tax-free "wrappers." Most international students never learn about them. <strong>Maximising these accounts is worth more than any clever stock pick.</strong></div>
+      </div>
+    </div>
+
+    <p>The UK gives you three powerful "tax wrappers." A wrapper is like a special box: whatever you put inside
+      grows differently from money outside the box.</p>
+
+    <h3>4.1 · Stocks &amp; Shares ISA: the gold standard</h3>
+    <p><strong>What it is:</strong> A tax-free investment account. Anything you do inside it (buying, selling,
+      dividends, capital gains) is <strong>completely free from UK tax, forever.</strong></p>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <div class="card__label">Annual limit · 2026/27</div>
+        <div class="card__value">£20,000</div>
+        <div class="card__desc">Use it or lose it; no carry-over. Tax year runs 6 April → 5 April.</div>
+      </div>
+      <div class="card">
+        <div class="card__label">Withdrawals</div>
+        <div class="card__value">Tax-free, always</div>
+        <div class="card__desc">All growth inside the ISA (dividends + capital gains) is tax-free forever.</div>
+      </div>
+    </div>
+
+    <p><strong>Eligibility:</strong> 18+ ✓ · UK resident for tax purposes (as a long-course MSc student you
+      almost certainly qualify under the Statutory Residence Test) ✓ · National Insurance Number held ✓.</p>
+
+    <p><strong>Why it's incredible:</strong> Outside an ISA, you only get £3,000 of capital gains tax-free and
+      £500 of dividends tax-free per year, and anything above gets taxed. Inside the ISA, <strong>everything is
+      tax-free</strong>. Over 25 years of compounding, this difference is <em>enormous</em>. For someone
+      investing £1,000/month at 7% returns for 25 years, the ISA wrapper can mean an extra £100,000+ of final
+      wealth.
+      <a href="https://www.gov.uk/individual-savings-accounts" target="_blank" rel="noopener">[gov.uk ISA overview]</a></p>
+
+    <p><strong>Important rule going forward:</strong> If you leave the UK and stop being UK tax resident, you
+      <strong>keep your existing ISA</strong> (it continues to grow tax-free under UK rules) but you
+      <strong>cannot contribute new money</strong>. If you return and become tax resident again, you can resume
+      contributions.</p>
+
+    <h3>4.2 · Lifetime ISA (LISA): free government money</h3>
+    <p><strong>What it is:</strong> A special type of ISA where the UK government adds <strong>25% to whatever
+      you put in</strong>, up to £4,000/year, so you get up to <strong>£1,000/year free</strong>.
+      <a href="https://www.gov.uk/lifetime-isa" target="_blank" rel="noopener">[gov.uk LISA rules]</a></p>
+
+    <p><strong>The catches:</strong></p>
+    <ul>
+      <li>Must open before age 40. <strong>You're 31, so you have a 9-year window. Do not waste this.</strong></li>
+      <li>Money locked in until age 60 <em>unless</em> used to buy a first home (with restrictions).</li>
+      <li>£4,000 limit counts within your £20,000 overall ISA allowance.</li>
+      <li>Withdrawal for non-qualifying reasons = 25% penalty (which actually wipes out the government bonus <em>and</em> some of your own money).</li>
+    </ul>
+
+    <p><strong>Why this matters:</strong> If you contribute £4,000/year for 9 years (until age 40), you put in
+      £36,000, government adds £9,000, and it compounds for 20+ more years at ~7%, which is potentially
+      <strong>£150,000+ of retirement money largely from government bonuses alone</strong>.</p>
+
+    <p><strong>Best LISA providers:</strong>
+      <a href="https://www.ajbell.co.uk/lifetime-isa" target="_blank" rel="noopener">AJ Bell</a>,
+      <a href="https://www.hl.co.uk/investment-services/lifetime-isa" target="_blank" rel="noopener">Hargreaves Lansdown</a>,
+      <a href="https://www.moneyboxapp.com/lifetime-isa/" target="_blank" rel="noopener">Moneybox</a>,
+      <a href="https://dodl.co.uk/" target="_blank" rel="noopener">Dodl by AJ Bell</a>.</p>
+
+    <p><strong>Decision rule:</strong> If you have any chance of staying in the UK 5+ more years,
+      <strong>open a LISA before your 40th birthday</strong>. Even contributing £1,000/year is free £250 a year
+      you'd otherwise miss.</p>
+
+    <h3>4.3 · SIPP: Self-Invested Personal Pension</h3>
+    <p><strong>What it is:</strong> A pension account where your contributions get <strong>immediate tax
+      relief</strong> (basically a refund from HMRC).
+      <a href="https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief" target="_blank" rel="noopener">[gov.uk pension tax relief]</a></p>
+    <p><strong>Mechanics:</strong></p>
+    <ul>
+      <li>Contribute £8,000 → HMRC adds £2,000 → you have £10,000 inside the SIPP (this is "basic rate tax relief").</li>
+      <li>If you're a higher-rate taxpayer (earning £50k+), you can claim back even more via self-assessment.</li>
+      <li>Annual allowance: 100% of your earnings or £60,000, whichever is lower.</li>
+      <li><strong>Locked until age 57</strong> (rising to 58 in future); no early withdrawals.</li>
+    </ul>
+
+    <div class="proscons">
+      <div class="proscons__col proscons__col--pro">
+        <div class="proscons__title"><span class="badge badge--ok">Prioritise SIPP</span></div>
+        <ul>
+          <li>If you're sure you'll be UK tax resident long-term and pay UK tax in retirement.</li>
+          <li>If you become a higher-rate taxpayer (over £50,270/year), the relief is most valuable then.</li>
+          <li>If your employer offers matching contributions, <strong>always take the match first</strong> (it's free money).</li>
+        </ul>
+      </div>
+      <div class="proscons__col proscons__col--con">
+        <div class="proscons__title"><span class="badge badge--no">Don't over-prioritise</span></div>
+        <ul>
+          <li>If you might leave the UK permanently before retirement (it gets complicated to access from abroad).</li>
+          <li>If you're still figuring out where you'll spend retirement.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>4.4 · Cash ISA</h3>
+    <p>For your emergency fund. Currently up to £20,000/year, dropping to £12,000 from April 2027 for under-65s.
+      Choose a flexible cash ISA so you can withdraw and re-deposit within the same tax year without losing
+      your allowance.</p>
+
+    <h3>4.5 · Premium Bonds (small but tax-free)</h3>
+    <p><a href="https://www.nsandi.com/products/premium-bonds" target="_blank" rel="noopener">NS&amp;I Premium Bonds</a>
+      is government-backed and tax-free, but instead of interest you enter monthly prize draws. Maximum holding:
+      £50,000. Average effective rate ~4% (as of 2026), tax-free. Not investing per se, but a tax-free cash
+      parking spot.</p>
+
+    <h3>4.6 · The "priority cascade": what to fund in what order</h3>
+    <ol class="steps">
+      <li class="step"><strong>Build emergency fund</strong> (cash, ideally in a Cash ISA).</li>
+      <li class="step"><strong>Pay off high-interest debt</strong> (credit cards, BNPL).</li>
+      <li class="step"><strong>Take any employer pension match</strong> (free money).</li>
+      <li class="step"><strong>Fill LISA up to £4,000/year</strong> (only if you're staying in UK; 25% government bonus is unbeatable for first-home-buyers or retirement-at-60).</li>
+      <li class="step"><strong>Fill Stocks &amp; Shares ISA</strong> with the rest of your monthly investing budget.</li>
+      <li class="step"><strong>Top up SIPP</strong> if you're a higher-rate taxpayer or want extra retirement savings.</li>
+      <li class="step"><strong>Only after all above is maxed</strong>, use a regular (taxable) investment account.</li>
+    </ol>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Most international students don't realise this. They open a regular brokerage account and pay tax they
+        never had to pay. <strong>A Stocks &amp; Shares ISA is your first, second, and third stop</strong>.
+        Until your annual £20,000 ISA allowance is full, do not invest in any taxable UK account.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ZOOM CALLOUT 1
+============================================================ -->
+<section class="container" data-aos="fade-up">
+  <div class="zoom-callout" data-zoom>
+    <div class="zoom-callout__label">Buffett's instruction</div>
+    <p class="zoom-callout__quote">
+      "Put <strong>90% in a very low-cost S&amp;P 500 index fund</strong>.
+      The other 10% in short-term government bonds."
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 5 MARKET CAP MYTH
+============================================================ -->
+<section class="section" id="s5">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 5</span>
+      <h2 class="section__title">The Market Cap Myth (Why a $200 Share Is Not "Expensive")</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>I was afraid of US stocks because most shares are so expensive that my little investment might mean nothing. Am I wrong?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>That fear is based on a common confusion. Share <em>price</em> tells you almost nothing about whether a company is expensive. Let me dismantle it.</div>
+      </div>
+    </div>
+
+    <h3>5.1 · What is market capitalisation ("market cap")?</h3>
+    <p><strong>Market cap = share price × number of shares.</strong> It's the total value of all shares
+      combined, that is, what it would theoretically cost to buy the entire company at today's price.</p>
+
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Company</th><th>Share price</th><th>Shares outstanding</th><th>Market cap</th></tr></thead>
+          <tbody>
+            <tr><td>Apple</td><td>~$200</td><td>~15bn</td><td>~$3 trillion</td></tr>
+            <tr><td>Berkshire Hathaway (Class A)</td><td>~$700,000</td><td>tiny number</td><td>~$1 trillion</td></tr>
+            <tr><td>Berkshire Hathaway (Class B)</td><td>~$450</td><td>many more</td><td>Same company</td></tr>
+            <tr><td>Tesla</td><td>~$300</td><td>~3bn</td><td>~$1 trillion</td></tr>
+            <tr><td>Microsoft</td><td>~$420</td><td>~7bn</td><td>~$3 trillion</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p><strong>Key insight:</strong> The <em>price per share</em> tells you almost nothing about whether a
+      company is expensive or cheap. It's just an arbitrary number determined by how many slices the pizza has
+      been cut into.</p>
+    <p>A company that's "cheap" or "expensive" is determined by ratios like P/E (price-to-earnings), not the
+      headline share price.</p>
+
+    <h3>5.2 · Fractional shares solve everything</h3>
+    <p>UK platforms like <a href="https://www.trading212.com/" target="_blank" rel="noopener">Trading 212</a>,
+      <a href="https://www.vanguardinvestor.co.uk/" target="_blank" rel="noopener">Vanguard UK</a> (for some funds),
+      <a href="https://lightyear.com/uk" target="_blank" rel="noopener">Lightyear</a>,
+      <a href="https://www.investengine.com/" target="_blank" rel="noopener">InvestEngine</a>, and
+      <a href="https://www.interactivebrokers.co.uk/" target="_blank" rel="noopener">Interactive Brokers</a>
+      let you buy <em>fractional shares</em>: meaning you can buy £10 worth of Apple, not a whole share.</p>
+    <ul>
+      <li>£10 → 0.05 shares of Apple</li>
+      <li>£100 → 0.22 shares of Berkshire Hathaway Class B</li>
+      <li>£1,000 → ~2.4 shares of Microsoft</li>
+    </ul>
+    <p>Your "small" investment doesn't mean nothing. It means <em>exactly the same fraction of ownership</em> as
+      someone who buys 100 shares.</p>
+
+    <h3>5.3 · The much better way: ETFs</h3>
+    <p>Even better than picking individual US stocks, you can buy a <strong>single ETF</strong> that owns
+      hundreds or thousands of companies at once. Examples:</p>
+    <ul>
+      <li><strong>Vanguard FTSE All-World UCITS (VWRP)</strong>: owns ~3,800 companies globally</li>
+      <li><strong>Vanguard S&amp;P 500 UCITS (VUAG)</strong>: owns the 500 largest US companies</li>
+      <li><strong>iShares Core MSCI World (SWDA / IWDA)</strong>: owns ~1,500 developed-market companies</li>
+    </ul>
+    <p>One purchase = global diversification. The price of one share doesn't matter; you can buy fractional
+      shares of these too.</p>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Stop worrying about share prices. £100/month into VWRP gives you ownership of 3,800 companies in 47
+        countries. That is the most diversified single thing you can buy on planet Earth, and it costs you
+        about 0.22% per year in fees.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 6 WHAT TO BUY
+============================================================ -->
+<section class="section" id="s6">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 6</span>
+      <h2 class="section__title">What to Actually Buy: The Simple Truth</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>OK, so what do I <em>actually</em> buy?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>After 50 years of academic research, the answer for 95% of investors is genuinely boring: <strong>Own the global stock market through a low-cost index fund. Don't try to be clever.</strong></div>
+      </div>
+    </div>
+
+    <p>Vanguard founder John Bogle, Warren Buffett, every credible academic (Eugene Fama, Burton Malkiel): all
+      converged on this conclusion.</p>
+
+    <h3>6.1 · The simplest possible long-term portfolio (1 ETF)</h3>
+    <div class="card" style="border-left: 4px solid var(--color-secondary);">
+      <div class="card__label">Recommended single-fund portfolio</div>
+      <div class="card__value">100% in VWRP</div>
+      <div class="card__desc">Vanguard FTSE All-World UCITS ETF, accumulating.</div>
+      <ul style="margin-top: 1rem;">
+        <li>Tracks ~3,800 stocks across developed and emerging markets</li>
+        <li>Fee: 0.22% per year</li>
+        <li>Domiciled in Ireland (UCITS) → tax-efficient for UK investors</li>
+        <li>"Accumulating" means dividends are auto-reinvested for you (good inside an ISA)</li>
+      </ul>
+      <p style="margin: 0;"><a href="https://www.vanguard.co.uk/professional/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating" target="_blank" rel="noopener">Vanguard VWRP factsheet →</a></p>
+    </div>
+    <p>This single fund is <em>probably better than 95% of professionally managed portfolios</em>.</p>
+
+    <h3>6.2 · The classic "three-fund portfolio"</h3>
+    <p>If you want a tiny bit more control:</p>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Holding</th><th>Weight</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>VWRP (or VHVG for developed only)</td><td>70–80%</td><td>Global equity growth</td></tr>
+            <tr><td>VAGS (Vanguard Global Bond UCITS, GBP-hedged)</td><td>15–25%</td><td>Stability, reduces volatility</td></tr>
+            <tr><td>BCSH / CSH2 (UK money market)</td><td>5%</td><td>Cash buffer for opportunities</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h3>6.3 · If you want to express a deliberate "US tilt" (not unreasonable)</h3>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Holding</th><th>Weight</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>VUAG (Vanguard S&amp;P 500)</td><td>40–50%</td><td>US large-cap growth engine</td></tr>
+            <tr><td>VHVG (Vanguard FTSE Developed World ex-US)</td><td>20–25%</td><td>Non-US developed (Europe, Japan, etc.)</td></tr>
+            <tr><td>VFEM (Vanguard FTSE Emerging Markets)</td><td>5–10%</td><td>EM growth (China, India, Brazil, etc.)</td></tr>
+            <tr><td>VAGS or AGGG (Global bonds, GBP-hedged)</td><td>15–20%</td><td>Defensive ballast</td></tr>
+            <tr><td>Optional: VAP / IPRP (Global REITs)</td><td>5%</td><td>Real estate exposure without owning property</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h3>6.4 · Important: pick "accumulating" share classes inside an ISA</h3>
+    <p>Most major UK-traded ETFs have two versions:</p>
+    <ul>
+      <li><strong>Distributing (Dist / D)</strong>: pays dividends as cash you can spend.</li>
+      <li><strong>Accumulating (Acc / A)</strong>: auto-reinvests dividends into more shares.</li>
+    </ul>
+    <p>Inside an ISA, <strong>always pick Accumulating</strong>. Compounding happens automatically, no friction,
+      no fees on each tiny dividend purchase.</p>
+
+    <h3>6.5 · Why "UCITS" matters for a UK-based investor</h3>
+    <p><strong>UCITS</strong> = Undertakings for Collective Investment in Transferable Securities (don't
+      memorise this). What you need to know:</p>
+    <ul>
+      <li>UCITS ETFs are domiciled in Europe (usually Ireland or Luxembourg).</li>
+      <li>They are <strong>tax-efficient</strong> for UK investors because of how dividends and capital gains flow.</li>
+      <li>They avoid the <strong>PRIIPs problem</strong>: many "direct" US ETFs (like the actual US-listed VOO) cannot be bought by UK retail investors due to UK/EU regulation.</li>
+      <li>They are usually listed on the London Stock Exchange (look for tickers ending in <code>.L</code>).</li>
+    </ul>
+    <p><strong>Translation:</strong> Buy VWRP/VWRL (UK listed) not VOO (US listed); they own essentially the
+      same companies, but the UK version is the one you can actually buy and is more tax-efficient for you.</p>
+
+    <h3>6.6 · What NOT to buy as a beginner</h3>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Don't</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td><span class="badge badge--no">✗</span> Individual stocks based on Twitter/YouTube tips</td><td>Survivorship bias; you only hear about winners</td></tr>
+            <tr><td><span class="badge badge--no">✗</span> Single-country or single-sector ETFs</td><td>Concentration risk</td></tr>
+            <tr><td><span class="badge badge--no">✗</span> Leveraged ETFs (2x, 3x)</td><td>Decay over time; designed for day-traders</td></tr>
+            <tr><td><span class="badge badge--no">✗</span> Inverse ETFs ("short" ETFs)</td><td>Same problem</td></tr>
+            <tr><td><span class="badge badge--no">✗</span> Crypto as a "core" holding</td><td>Fine as 1–5% gamble money; not core</td></tr>
+            <tr><td><span class="badge badge--no">✗</span> Anything with annual fee &gt; 1%</td><td>Fees compound in reverse</td></tr>
+            <tr><td><span class="badge badge--no">✗</span> "Smart Beta" or "Thematic" ETFs</td><td>Marketing dressed as strategy; high fees</td></tr>
+            <tr><td><span class="badge badge--no">✗</span> Active mutual funds</td><td>85%+ underperform their benchmark over 15 years</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Start with VWRP. Add one bond fund later. That's a defensible portfolio. The complexity comes from
+        emotions, not from need.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 7 UK BROKERS
+============================================================ -->
+<section class="section" id="s7">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 7</span>
+      <h2 class="section__title">UK Brokers / Platforms: How to Choose</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>Which platform should I actually open an account on?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>There is no single "best" platform; it depends on what you're buying and how much you have. Here's the shortlist.</div>
+      </div>
+    </div>
+
+    <h3>7.1 · The shortlist (UK-resident retail investors, 2026)</h3>
+
+    <div class="table-wrap">
+      <div class="table-caption">Tap any platform name to visit their site.</div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Platform</th><th>Best for</th><th>Fees</th><th>ISA?</th><th>LISA?</th><th>SIPP?</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td><strong><a href="https://www.trading212.com/" target="_blank" rel="noopener">Trading 212</a></strong></td><td>Small starting amounts, fractional shares, simplicity</td><td>£0 commission, ~0.15% FX</td><td>✓</td><td>n/a</td><td>Not yet</td><td>UK retail favourite. App is good.</td></tr>
+            <tr><td><strong><a href="https://www.investengine.com/" target="_blank" rel="noopener">InvestEngine</a></strong></td><td>Pure ETF investors with ISA</td><td>£0 ETF fees, 0.25% managed portfolios</td><td>✓</td><td>n/a</td><td>✓</td><td>Cheapest for ETF-only</td></tr>
+            <tr><td><strong><a href="https://www.vanguardinvestor.co.uk/" target="_blank" rel="noopener">Vanguard UK</a></strong></td><td>Vanguard ETF/fund investors, simple</td><td>0.15% platform fee, capped £375</td><td>✓</td><td>Closed</td><td>✓</td><td>Only Vanguard products</td></tr>
+            <tr><td><strong><a href="https://dodl.co.uk/" target="_blank" rel="noopener">AJ Bell / Dodl</a></strong></td><td>Wide range, lower fees than HL</td><td>£1.50/mo flat (Dodl), %-based (AJ Bell)</td><td>✓</td><td>✓</td><td>✓</td><td>Dodl is the cheap mobile version</td></tr>
+            <tr><td><strong><a href="https://www.hl.co.uk/" target="_blank" rel="noopener">Hargreaves Lansdown</a></strong></td><td>Established, lots of features, customer service</td><td>0.45% (capped at £45/yr for shares)</td><td>✓</td><td>✓</td><td>✓</td><td>More expensive but full-service</td></tr>
+            <tr><td><strong><a href="https://www.interactivebrokers.co.uk/" target="_blank" rel="noopener">Interactive Brokers (IBKR)</a></strong></td><td>International investors, advanced traders</td><td>Very low</td><td>✓</td><td>n/a</td><td>✓</td><td>Steeper learning curve; very low FX fees</td></tr>
+            <tr><td><strong><a href="https://www.moneyboxapp.com/" target="_blank" rel="noopener">Moneybox</a></strong></td><td>LISA-focused beginners</td><td>Various</td><td>✓</td><td>✓</td><td>✓</td><td>LISA reputation is strong</td></tr>
+            <tr><td><strong><a href="https://freetrade.io/" target="_blank" rel="noopener">Freetrade</a></strong></td><td>Basic ISA, fractional UK + US shares</td><td>£0 commission, FX fees</td><td>✓</td><td>n/a</td><td>✓</td><td>Decent app</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h3>7.2 · My pragmatic recommendation for someone like you</h3>
+    <p><strong>Two-platform approach:</strong></p>
+    <ol>
+      <li><strong>One ISA platform</strong> that's cheap and lets you hold simple ETFs.
+        <ul>
+          <li>If you mostly buy ETFs only: <strong>InvestEngine</strong> or <strong>Trading 212</strong>.</li>
+          <li>If you want broader range including funds: <strong>AJ Bell / Dodl</strong> or <strong>Vanguard UK</strong>.</li>
+        </ul>
+      </li>
+      <li><strong>One LISA platform</strong> (open before you turn 40).
+        <ul>
+          <li><strong>Moneybox</strong>, <strong>AJ Bell Dodl</strong>, or <strong>Hargreaves Lansdown</strong>.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <p>For now, you do NOT need a separate SIPP unless you start working full-time in the UK and your employer
+      offers matching. The workplace pension you'll be auto-enrolled in handles that.</p>
+
+    <h3>7.3 · What about Bamboo / Nigerian platforms?</h3>
+    <p><a href="https://www.investbamboo.com/" target="_blank" rel="noopener">Bamboo</a> is fine for Nigerian
+      stock exposure but <strong>expensive (1.5% per trade)</strong>. Use it <em>only</em> for any
+      Nigerian-listed exposure you want, not for US or UK stocks (you have cheaper options in the UK).</p>
+    <p>For Nigerian T-bills and bonds: go through a Nigerian stockbroker
+      (<a href="https://stockbrokers.stanbicibtc.com/" target="_blank" rel="noopener">Stanbic IBTC Stockbrokers</a>,
+      <a href="https://www.armsecurities.com.ng/" target="_blank" rel="noopener">ARM Securities</a>,
+      <a href="https://www.cardinalstone.com/" target="_blank" rel="noopener">Cardinalstone</a>) or directly
+      through your Nigerian bank for retail T-bills. Bamboo doesn't offer the full bond range.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 8 BONDS / T-BILLS / MMF
+============================================================ -->
+<section class="section" id="s8">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 8</span>
+      <h2 class="section__title">Bonds, T-Bills, and Money Market Funds: Demystified</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>Everyone keeps saying "bonds and T-bills." I switch off. What are they really?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>They're all just different flavours of <em>lending money</em>. Once you see that, the jargon collapses.</div>
+      </div>
+    </div>
+
+    <h3>8.1 · What is a bond?</h3>
+    <p>A bond is <strong>a loan you give to someone else</strong> (a government or a company). You hand them
+      cash; they promise to pay you interest periodically and return your money at the end.</p>
+    <ul>
+      <li><strong>Government bonds</strong> (UK = "Gilts," US = "Treasuries", Nigeria = "FGN Bonds"): the safest, because governments rarely default in their own currency.</li>
+      <li><strong>Corporate bonds</strong>: loans to companies. Higher interest, higher risk.</li>
+      <li><strong>High-yield / "junk" bonds</strong>: loans to riskier companies. Even higher interest, much higher risk.</li>
+    </ul>
+
+    <h3>8.2 · What is a T-bill?</h3>
+    <p>A <strong>Treasury bill</strong> is a short-term government bond, usually 3 months, 6 months, or 1 year.
+      You buy it at a discount (e.g., £98) and get back the face value (£100) at the end. The difference is
+      your interest.</p>
+    <div class="stat-grid">
+      <div class="stat"><span class="stat__num">3.5–4.5%</span><span class="stat__label">UK T-bills (DMO, 2026)</span></div>
+      <div class="stat"><span class="stat__num">17–22%</span><span class="stat__label">Nigerian T-bills (₦, 2026)</span></div>
+      <div class="stat"><span class="stat__num">4–5%</span><span class="stat__label">US T-bills (2026)</span></div>
+    </div>
+    <p class="muted">Nigerian yields are in <em>naira</em>, so you carry naira-devaluation risk.</p>
+
+    <h3>8.3 · What is a Money Market Fund (MMF)?</h3>
+    <p>An MMF is a fund that owns a bunch of very-short-term bonds and T-bills. It pays you a yield close to
+      the central bank rate, with very low risk.</p>
+    <p>UK examples:</p>
+    <ul>
+      <li><strong>CSH2</strong> (Lyxor Smart Overnight Return UCITS ETF): yields close to BoE rate</li>
+      <li><strong>XSTR</strong> (Xtrackers EUR/GBP overnight equivalent)</li>
+      <li><strong>BlackRock ICS Sterling Liquidity</strong> (institutional, may not be retail-accessible)</li>
+    </ul>
+    <p>Inside an ISA, these are tax-free interest. <strong>Very useful as a parking spot for cash inside your
+      investment account.</strong></p>
+
+    <h3>8.4 · Why bonds matter in a portfolio</h3>
+    <ul>
+      <li><strong>Diversification:</strong> Bonds often go <em>up</em> when stocks go <em>down</em> (not always, but often). They provide stability.</li>
+      <li><strong>Income:</strong> Predictable interest payments.</li>
+      <li><strong>Cash management:</strong> MMFs are better than uninvested cash sitting in your broker account.</li>
+    </ul>
+
+    <h3>8.5 · The standard rule of thumb (oversimplified but useful)</h3>
+    <p>Old saying: <em>"Your bond percentage should roughly equal your age."</em> At 31, that means ~30% bonds.
+      <strong>Most modern advisers consider this too conservative for young investors.</strong> Realistic
+      ranges for your age:</p>
+
+    <div class="chart-card" data-aos="fade-up">
+      <div class="chart-card__title">Allocation by risk tolerance (age 31)</div>
+      <div class="chart-card__sub">Equity / Bonds / Cash &amp; MMF, stacked.</div>
+      <div class="chart-canvas-wrap"><canvas id="chartAllocation"></canvas></div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Risk tolerance</th><th>Equity</th><th>Bonds</th><th>Cash/MMF</th></tr></thead>
+          <tbody>
+            <tr><td>Very aggressive</td><td>90%</td><td>5%</td><td>5%</td></tr>
+            <tr><td>Aggressive</td><td>80%</td><td>15%</td><td>5%</td></tr>
+            <tr><td>Balanced</td><td>70%</td><td>25%</td><td>5%</td></tr>
+            <tr><td>Conservative</td><td>60%</td><td>35%</td><td>5%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p>For a 31-year-old with no near-term need for the money and a stable career trajectory,
+      <strong>80/15/5</strong> is a defensible default.</p>
+
+    <h3>8.6 · What about Eurobonds?</h3>
+    <p>"Eurobond" doesn't necessarily mean "euro-denominated." It means a bond issued in a currency <em>other
+      than the issuer's home currency</em> (e.g., a Nigerian government bond denominated in USD).</p>
+    <ul>
+      <li><strong>Nigerian USD Eurobonds</strong>: issued by the Nigerian government, yielding ~9–11% in USD (2026). Reasonable yield, but Nigerian sovereign risk in dollar terms.</li>
+      <li><strong>Corporate Eurobonds</strong> (Dangote, Access, Seplat): higher yields, higher risk.</li>
+      <li><strong>Minimum investment</strong> is usually $200,000 face value, so out of reach unless via funds (e.g., emerging-market sovereign bond ETFs like EMB).</li>
+    </ul>
+
+    <h3>8.7 · Nigerian T-bills: should you bother?</h3>
+    <div class="proscons">
+      <div class="proscons__col proscons__col--pro">
+        <div class="proscons__title"><span class="badge badge--ok">Pros</span></div>
+        <ul>
+          <li>17–22% yield in 2026</li>
+          <li>Government-backed</li>
+          <li>Easy to access via Nigerian bank</li>
+          <li>Tax efficient in Nigeria</li>
+        </ul>
+      </div>
+      <div class="proscons__col proscons__col--con">
+        <div class="proscons__title"><span class="badge badge--no">Cons</span></div>
+        <ul>
+          <li>Returns are in <em>naira</em>, which has lost 67% to GBP in 3 years</li>
+          <li>If naira falls 20% in a year, your "20% T-bill yield" was effectively 0% in GBP</li>
+          <li>Currency conversion friction (Wise, broker spreads)</li>
+          <li>UK taxes you on the income if you're UK tax resident</li>
+        </ul>
+      </div>
+    </div>
+
+    <p><strong>Honest take:</strong> Unless you have significant naira income (family remittances, Nigerian
+      rental income, etc.) that you want to deploy without converting to GBP, <strong>Nigerian T-bills are not
+      a great fit for a UK-resident investor</strong>. The headline yield is misleading once you account for
+      currency.</p>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Use a UK Money Market Fund or Cash ISA for short-term cash. Add 10–20% in a Global Bond ETF (like
+        VAGS, GBP-hedged) once your equity position is established. Skip Nigerian T-bills unless you have
+        specific reasons to hold naira.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 9 NIGERIAN STOCKS
+============================================================ -->
+<section class="section" id="s9">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 9</span>
+      <h2 class="section__title">Nigerian Stocks: The Smart Tactical Allocation</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>I still want some Nigerian exposure. Is that crazy?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>Defensible, but it must be a <strong>small, deliberate tactical allocation</strong>, not your main strategy.</div>
+      </div>
+    </div>
+
+    <h3>9.1 · The honest case for Nigerian equities (still)</h3>
+    <ul>
+      <li>You understand the market culturally.</li>
+      <li>It's a high-volatility, sometimes high-return frontier market.</li>
+      <li>Diversifies away from US/UK exposure (though it's correlated with global EM crises).</li>
+      <li>Some companies genuinely do compound impressively (Dangote, MTNN, Zenith over 20-year periods).</li>
+    </ul>
+
+    <h3>9.2 · The honest case against making it big</h3>
+    <ul>
+      <li>Currency risk eats most of your gains over 10+ years.</li>
+      <li>Bamboo's 1.5% per-trade fees are punishing.</li>
+      <li>Liquidity is thin outside the top 30 names.</li>
+      <li>Political risk is real and uncorrelated.</li>
+      <li>Most "transformation" upside is uncertain (see prior walkthrough document).</li>
+    </ul>
+
+    <h3>9.3 · Recommended structure for Nigerian sleeve</h3>
+    <p>If you decide to allocate, say, <strong>5–15% of your portfolio to Nigerian assets</strong>, this is the
+      cleanest way:</p>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Holding</th><th>% of Nigerian sleeve</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td><strong>STANBICIBTC30 ETF</strong></td><td>60–70%</td><td>Broad NGX 30 exposure with one product</td></tr>
+            <tr><td><strong>One or two non-index conviction picks</strong> (e.g., FIDSON, CWG, or a specific bank you've researched)</td><td>20–30%</td><td>Genuine tilts you can defend</td></tr>
+            <tr><td><strong>Cash or Naira MMF</strong></td><td>5–10%</td><td>Buffer / opportunity</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p><strong>Skip:</strong> OMATEK, micro-cap "meme" plays, anything below ₦5 share price you can't explain
+      in plain language.</p>
+
+    <h3>9.4 · How to fund this from the UK</h3>
+    <p>Bamboo lets you fund a naira account from the UK via international transfer, but rates are punishing.
+      Better options:</p>
+    <ul>
+      <li><a href="https://wise.com/" target="_blank" rel="noopener">Wise (formerly TransferWise)</a>: interbank rates with small fee.</li>
+      <li><a href="https://www.sendwave.com/" target="_blank" rel="noopener">Sendwave</a> / <a href="https://lemonadefinance.com/" target="_blank" rel="noopener">Lemonade Finance</a>: competitive for Nigerian transfers.</li>
+      <li><strong>Family member sending directly</strong> if you have someone in Nigeria.</li>
+    </ul>
+    <p>Always compare the <em>effective rate</em> (after all fees) before sending.</p>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Nigerian stocks: 5–15% of your portfolio, mostly in the ETF, never your main game. If you can't accept
+        that, drop them entirely. Half-commitment to Nigerian equities is the worst of both worlds.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 9.5 NIGERIAN MMFs: COMPLETE GUIDE
+============================================================ -->
+<section class="section" id="s9-5">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 9.5</span>
+      <h2 class="section__title">Nigerian Money Market Funds: Complete Guide</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>Should I use Nigerian Money Market Funds? They're advertising 20%+ yields.</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>They sound amazing, and they are a useful naira-denominated tool. But for someone earning in GBP, there's a currency catch that nobody on Nigerian YouTube tells you about. Let's go through it properly.</div>
+      </div>
+    </div>
+
+    <h3>9.5.1 · What a Nigerian MMF actually is</h3>
+    <p>A <strong>Money Market Fund (MMF)</strong> is a mutual fund that pools money from many investors and uses
+      it to buy <strong>only very short-term, low-risk debt instruments</strong>: typically:</p>
+    <ul>
+      <li><strong>Treasury bills</strong> (T-bills): short-term borrowing by the Nigerian government (3-month, 6-month, 1-year tenors)</li>
+      <li><strong>Commercial paper (CP):</strong> short-term IOUs issued by large Nigerian companies</li>
+      <li><strong>Banker's acceptances:</strong> short-term promises by banks</li>
+      <li><strong>Fixed deposits with banks</strong> rated investment grade (BBB+ and above)</li>
+    </ul>
+    <p>The fund manager handles the buying, selling, and renewing of these instruments on your behalf, and
+      <strong>pays you a share of the interest earned</strong>, typically as a daily-accruing yield distributed
+      periodically (monthly or quarterly).</p>
+    <p><strong>Plain-English picture:</strong> Imagine a pot. You and 50,000 other people pour money in. The
+      fund manager lends that pot of money to the government and to a few solid companies for short periods
+      (under 1 year), collects the interest, takes a small management fee, and pays the rest to everyone in
+      proportion to what they put in.</p>
+
+    <h3>9.5.2 · Why Nigerians use MMFs</h3>
+    <p>In Nigeria, MMFs solve a specific real problem: <strong>regular bank savings accounts pay terrible
+      interest (2–4%)</strong>, but Nigerian inflation is <strong>~15% (April 2026)</strong> and the CBN's
+      policy rate is <strong>26.5%</strong>. So leaving money in a normal savings account loses you ~11% in
+      real purchasing power per year.</p>
+    <p>MMFs sit in the middle; they offer:</p>
+
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Feature</th><th>Bank savings account</th><th>Money Market Fund</th><th>Fixed deposit</th></tr></thead>
+          <tbody>
+            <tr><td>Typical yield (2026)</td><td>2–4%</td><td><strong>15–22%</strong></td><td>12–18%</td></tr>
+            <tr><td>Liquidity (how fast you can withdraw)</td><td>Same day</td><td>2–5 working days</td><td>Locked for tenor</td></tr>
+            <tr><td>Risk</td><td>Very low</td><td>Very low</td><td>Very low</td></tr>
+            <tr><td>Minimum investment</td><td>Varies</td><td>₦5,000–₦10,000</td><td>Often ₦100,000+</td></tr>
+            <tr><td>Capital preservation</td><td>Yes</td><td>Yes (NAV usually stable)</td><td>Yes</td></tr>
+            <tr><td>Tax</td><td>WHT applies</td><td>WHT applies (10%)</td><td>WHT applies (10%)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p><strong>For Nigerians, MMFs have effectively replaced the role of a "high-interest savings account."</strong>
+      The industry has grown massively: as of March 2026, <strong>46 MMFs collectively manage ₦5.46 trillion</strong>,
+      which is <strong>64.9% of all mutual fund assets in Nigeria</strong>.
+      <a href="https://nairametrics.com/2026/04/07/money-market-funds-hit-n5-46-trillion-as-stl-tops-ytd-returns-at-20-24/" target="_blank" rel="noopener">[Nairametrics, Apr 2026]</a></p>
+
+    <h3>9.5.3 · The actual yield landscape (2026)</h3>
+    <p>Yields fluctuate, but here is the verified current picture (March/April 2026):</p>
+
+    <div class="chart-card" data-aos="fade-up">
+      <div class="chart-card__title">Top performers · YTD yield · Q1 2026</div>
+      <div class="chart-card__sub">Source: <a href="https://nairametrics.com/2026/05/23/top-performing-money-market-fund-md-ceos-as-of-q1-2026/" target="_blank" rel="noopener">Nairametrics Q1 2026 ranking</a>.</div>
+      <div class="chart-canvas-wrap chart-canvas-wrap--tall"><canvas id="chartTopMMF"></canvas></div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-caption">The "big name" funds (what you probably know)</div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Fund</th><th>Indicative Yield (2026)</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Stanbic IBTC Money Market Fund (SIMM)</td><td><strong>~15.5%</strong></td><td>Largest by NAV. Most accessible. Conservative reputation.</td></tr>
+            <tr><td>ARM Money Market Fund</td><td>~15–17%</td><td>Long-established. Reputable.</td></tr>
+            <tr><td>FBNQuest Money Market Fund</td><td>~15–17%</td><td>Bank-backed. Solid.</td></tr>
+            <tr><td>United Capital MMF</td><td>~16–17%</td><td>Reliable, mid-tier.</td></tr>
+            <tr><td>Cordros Money Market Fund (CMMF)</td><td>~16–17%</td><td>Well-regarded boutique.</td></tr>
+            <tr><td>AXA Mansard MMF</td><td>~15–17%</td><td>Insurance-backed manager.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p><strong>Key insight:</strong> The <em>biggest, most marketed</em> funds (Stanbic, ARM, FBN) typically
+      yield <strong>2–5 percentage points lower</strong> than the top performers (STL, Page, Trustbanc,
+      Greenwich). Why?</p>
+    <ol>
+      <li>They have larger asset bases and are slightly more conservative.</li>
+      <li>They use the largest, lowest-yielding T-bills and bank deposits.</li>
+      <li>Their management fees are sometimes higher (1.5% vs ~1.0% at boutiques).</li>
+      <li>They prioritize "scale and stability" over chasing yield.</li>
+    </ol>
+    <p>This trade-off is <strong>mostly real</strong>: paying a small yield discount for institutional
+      reliability is reasonable. But the <em>gap</em> between Stanbic IBTC's 15.5% and STL's 20.24% is
+      meaningful over years.</p>
+
+    <h3>9.5.4 · Tax treatment in Nigeria</h3>
+    <ul>
+      <li><strong>Income from MMFs is subject to 10% Withholding Tax (WHT)</strong>: deducted at source by the fund manager. The headline yield (e.g., 20.24%) is the <em>gross</em>; your net is roughly 18.2%.</li>
+      <li><strong>WHT in Nigeria is generally treated as final tax</strong> for individuals on investment income, so you don't owe additional tax on top.</li>
+      <li><strong>If you are UK tax resident</strong> (which you are during your MSc and Graduate Route), this income is technically taxable in the UK too on your worldwide income. The <a href="https://www.gov.uk/government/publications/nigeria-tax-treaties" target="_blank" rel="noopener">UK-Nigeria Double Tax Treaty</a> allows you to credit the Nigerian WHT against your UK liability. <em>But</em>: you must declare it via UK Self Assessment. This is the biggest practical headache.</li>
+    </ul>
+
+    <h3>9.5.5 · Fees and structure</h3>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Item</th><th>Typical range</th><th>Stanbic IBTC example</th></tr></thead>
+          <tbody>
+            <tr><td>Minimum initial investment</td><td>₦5,000–₦100,000</td><td>₦5,000</td></tr>
+            <tr><td>Minimum subsequent</td><td>₦5,000–₦50,000</td><td>₦5,000</td></tr>
+            <tr><td>Management fee</td><td>1.0%–1.5% p.a.</td><td>1.5% p.a.</td></tr>
+            <tr><td>Minimum holding period</td><td>30 days</td><td>30 days</td></tr>
+            <tr><td>Penalty for early withdrawal</td><td>20% of accrued income</td><td>20% of accrued income</td></tr>
+            <tr><td>Distribution frequency</td><td>Monthly or quarterly</td><td>Quarterly</td></tr>
+            <tr><td>NAV / unit</td><td>Usually held at ₦100 or ₦1.00</td><td>₦100</td></tr>
+            <tr><td>Risk profile</td><td>"Conservative" / "Low"</td><td>"Conservative"</td></tr>
+            <tr><td>Settlement on redemption</td><td>2–5 business days</td><td>2–5 business days</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p><strong>The 30-day minimum holding period matters:</strong> if you put money in and need it back within
+      30 days, you lose 20% of the interest you've earned (your principal is safe; only the accrued income is
+      penalised). After 30 days you can redeem freely, usually settling in 2–5 business days.</p>
+
+    <h3>9.5.6 · The big picture for a UK-based investor</h3>
+    <p><strong>Honest assessment.</strong> Here's the thing nobody tells you on Nigerian YouTube:</p>
+    <p>A 20% naira-yield MMF sounds amazing until you convert to GBP. The naira has weakened against the pound
+      roughly <strong>15–25% per year</strong> over the last 3 years (from ~₦600/£ in 2023 to ~₦1,700/£ in 2026,
+      with major volatility).</p>
+
+    <div class="chart-card" data-aos="fade-up">
+      <div class="chart-card__title">A 20% naira yield, converted to GBP returns</div>
+      <div class="chart-card__sub">Same headline yield, different currency outcomes. Negative bars = you actually lost money.</div>
+      <div class="chart-canvas-wrap"><canvas id="chartGbpEffective"></canvas></div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Naira yield</th><th>Naira-to-GBP devaluation</th><th>Effective GBP return</th></tr></thead>
+          <tbody>
+            <tr><td>18%</td><td>-15%</td><td>~+3%</td></tr>
+            <tr><td>18%</td><td>-25%</td><td>~-7% (you lose money)</td></tr>
+            <tr><td>18%</td><td>0% (stable year)</td><td>~+18% (great year)</td></tr>
+            <tr><td>18%</td><td>+5% (naira gains, rare)</td><td>~+24%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p><strong>So a Nigerian MMF is a leveraged bet on naira stability.</strong> It is not the "safe high-yield"
+      haven Nigerian investing influencers make it sound. For a UK-resident investor, the <em>real</em>
+      comparison is:</p>
+    <ul>
+      <li><strong>UK Cash ISA</strong> (~4–5%): naira-risk-free, tax-free, in your spending currency</li>
+      <li><strong>Nigerian MMF</strong> (18% gross, 16.2% net of WHT): must outpace naira devaluation by ~12% just to match UK Cash ISA</li>
+    </ul>
+    <p>Historically the naira has consistently failed this test.</p>
+
+    <h3>9.5.7 · When Nigerian MMFs make sense for you specifically</h3>
+    <ol>
+      <li><strong>You receive naira income</strong> (family remittances coming to you, Nigerian salary, rental income from Nigerian property). You'd rather earn 18% in naira than 4% in a Nigerian bank account before deciding when to convert to GBP.</li>
+      <li><strong>You want a naira-denominated emergency parking spot</strong> for funds in Nigeria. A small naira buffer for family emergencies, travel home, etc.</li>
+      <li><strong>You're hedging against a scenario where you return to Nigeria</strong> and need naira-denominated savings ready.</li>
+      <li><strong>You're building a small NGN-denominated allocation as part of a deliberate currency-diversification strategy</strong>: say 5–10% of your portfolio.</li>
+    </ol>
+
+    <h3>9.5.8 · When they don't</h3>
+    <ul>
+      <li><strong>As a place to put GBP savings.</strong> Converting GBP → NGN to chase 18% yield is <em>gambling on currency stability</em>, not investing. The math has not worked out for any 5-year window in the last 20 years.</li>
+      <li><strong>As an alternative to a UK Cash ISA or high-interest UK savings account.</strong> The UK ISA is GBP-denominated, tax-free, and provides true capital preservation in your spending currency.</li>
+    </ul>
+
+    <h3>9.5.9 · Top platforms to access Nigerian MMFs</h3>
+    <p>Most fund managers have direct websites/apps. You can also access multiple via aggregator platforms:</p>
+
+    <h4>Direct (one provider only)</h4>
+    <ul>
+      <li><a href="https://www.stanbicibtcassetmanagement.com/" target="_blank" rel="noopener">Stanbic IBTC Asset Management</a> / SIAML mobile app: largest, most accessible, ₦5,000 minimum</li>
+      <li><a href="https://armassetmgt.com/" target="_blank" rel="noopener">ARM Investment Managers</a></li>
+      <li><strong>FBNQuest Asset Management</strong>: through FirstMobile or FBNQuest website</li>
+      <li><a href="https://cordros.com/asset-management/mutual-funds" target="_blank" rel="noopener">Cordros Asset Management</a></li>
+      <li><strong>Chapel Hill Denham</strong>: direct</li>
+      <li><strong>STL Asset Management</strong>: direct (the current top performer)</li>
+      <li><strong>United Capital Investing</strong>: easy mobile platform</li>
+      <li><strong>AXA Mansard Investments</strong>: app and web</li>
+    </ul>
+
+    <h4>Aggregator platforms (multiple MMFs in one place)</h4>
+    <ul>
+      <li><a href="https://i-invest.com.ng/" target="_blank" rel="noopener">i-invest</a> by Parthian Partners: compare and buy multiple MMFs in one app</li>
+      <li><a href="https://trove.finance/" target="_blank" rel="noopener">Trove Finance</a>: Nigerian and US assets including some MMFs</li>
+      <li><a href="https://cowrywise.com/" target="_blank" rel="noopener">Cowrywise</a>: popular for MMF investing, low minimums, savings-style UX</li>
+      <li><a href="https://www.piggyvest.com/" target="_blank" rel="noopener">PiggyVest</a>: primarily a savings app but offers MMF-like products</li>
+      <li><strong>Optimus by Afrinvest</strong>: MMF + other products</li>
+    </ul>
+
+    <p><strong>For a UK-resident investor, I would prioritise:</strong></p>
+    <ol>
+      <li><strong>Stanbic IBTC Asset Management direct</strong>: has the best reputation for handling Nigerian residents living abroad. Their KYC process accepts BVN + international address. You'll need to verify identity online.</li>
+      <li><strong>Cordros Asset Management</strong>: well-regarded, modest minimums, online-friendly.</li>
+      <li><strong>Cowrywise</strong>: easiest mobile UX, supports BVN-based KYC, lets you invest small amounts. Good for beginners and people abroad.</li>
+    </ol>
+
+    <p><strong>Avoid:</strong> Unregulated "MMF-style" mobile apps promising 25%+ returns. Always verify the
+      fund is <strong>SEC-registered</strong> at <a href="https://sec.gov.ng/" target="_blank" rel="noopener">sec.gov.ng</a>
+      before sending money. The Risevest 2025 regulatory saga (where the SEC briefly declared them unregistered
+      before they got their proper Fund Manager licence in February 2026) is a reminder that "fintech" wrappers
+      don't always mean SEC-compliant
+      <a href="https://technext24.com/2026/02/19/risevest-secures-sec-licence/" target="_blank" rel="noopener">[Technext, Feb 2026]</a>.</p>
+
+    <h3>9.5.10 · How to fund a Nigerian MMF from the UK</h3>
+    <p>You have two real options:</p>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <div class="card__label">Option A · Manual via Wise</div>
+        <p style="margin: 0.5rem 0 0;">Send GBP to Nigeria via <a href="https://wise.com/" target="_blank" rel="noopener">Wise</a>/Sendwave/Lemonade Finance, convert to NGN at the recipient (your own Nigerian bank account), then fund the MMF from there.</p>
+        <p style="margin-top: 0.8rem;"><span class="badge badge--ok">Pros</span> Direct, controlled rates.<br/>
+        <span class="badge badge--warn">Cons</span> Loses ~1–2% to FX spread.</p>
+      </div>
+      <div class="card">
+        <div class="card__label">Option B · Platform funding</div>
+        <p style="margin: 0.5rem 0 0;">Use a platform that accepts GBP funding (Risevest now does this, Cowrywise has international options). They handle conversion internally.</p>
+        <p style="margin-top: 0.8rem;"><span class="badge badge--ok">Pros</span> One-tap experience.<br/>
+        <span class="badge badge--warn">Cons</span> FX rates may be worse than Wise; less control.</p>
+      </div>
+    </div>
+
+    <p><strong>Best practice:</strong> Use <a href="https://wise.com/" target="_blank" rel="noopener">Wise</a>
+      for the transfer (interbank rates, total fee under 1%), receive into your existing Nigerian bank account,
+      then move into the MMF via the fund manager's app or via Cowrywise.</p>
+
+    <h3>9.5.11 · Risks specific to Nigerian MMFs</h3>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Risk</th><th>What it means</th><th>How severe?</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Currency risk (naira depreciation)</strong></td><td>Your naira yield can be wiped out or reversed in GBP terms</td><td><span class="badge badge--no">High</span>, the biggest risk by far</td></tr>
+            <tr><td><strong>Inflation risk</strong></td><td>If yields fall below inflation, you lose real purchasing power in Nigeria itself</td><td><span class="badge badge--warn">Medium</span></td></tr>
+            <tr><td><strong>Manager risk</strong></td><td>A small, poorly-managed fund can deliver mediocre returns or have operational hiccups</td><td><span class="badge badge--warn">Low–Medium</span></td></tr>
+            <tr><td><strong>Liquidity risk</strong></td><td>The 30-day minimum + 2–5 day redemption means it's not truly "instant access"</td><td><span class="badge badge--ok">Low</span></td></tr>
+            <tr><td><strong>Tax administrative burden</strong></td><td>Declaring Nigerian MMF income in UK Self Assessment is annoying</td><td><span class="badge badge--warn">Medium</span> (in terms of hassle, not money)</td></tr>
+            <tr><td><strong>Capital risk</strong></td><td>Very low; MMFs in Nigeria have never broken par (NAV staying above ₦100) in practice</td><td><span class="badge badge--ok">Very Low</span></td></tr>
+            <tr><td><strong>Regulatory risk</strong></td><td>The CBN/SEC could introduce new rules (e.g., minimum holding periods, withdrawal restrictions)</td><td><span class="badge badge--warn">Low–Medium</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Nigerian MMFs are an excellent <strong>tool for naira-denominated cash</strong>: emergency funds in
+        Nigeria, family-support reserves, or a small deliberate currency-diversification slice. They are
+        <strong>not</strong> an alternative to your UK Cash ISA or to investing your GBP savings. If you decide
+        to use them, allocate small (5–10% of portfolio max), pick <strong>STL, Trustbanc, Page, or Stanbic
+        IBTC</strong> depending on whether you prioritise yield or institutional comfort, and access via direct
+        providers or Cowrywise.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 9.6 NIGERIAN REAL ESTATE FUNDS
+============================================================ -->
+<section class="section" id="s9-6">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 9.6</span>
+      <h2 class="section__title">Nigerian Real Estate Funds: REITs, Mutual Funds &amp; Crowdfunding</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>What about Nigerian real estate funds and property crowdfunding? Worth it?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>Three categories exist: NGX-listed REITs, REIT mutual funds, and crowdfunding/co-investment platforms. Only the first is well-regulated and worth a small allocation. Let me show you the landscape.</div>
+      </div>
+    </div>
+
+    <h3>9.6.1 · What a REIT is (in Nigerian context)</h3>
+    <p>A <strong>Real Estate Investment Trust (REIT)</strong> is a fund that owns income-producing real estate
+      (residential, commercial, retail, etc.) and is required to distribute most of its rental income to
+      unit-holders. You buy units in the REIT, which trade like a stock on the NGX. You become a tiny
+      part-owner of the properties without ever signing a lease, dealing with a tenant, or fixing a roof.</p>
+    <p>In Nigeria, REITs are regulated by the <strong>SEC (Securities and Exchange Commission)</strong> under
+      the <a href="https://sec.gov.ng/" target="_blank" rel="noopener">Investments and Securities Act</a> and
+      the SEC Rules and Regulations on REITs.</p>
+
+    <h3>9.6.2 · The six listed REIT funds (as of January 2026)</h3>
+    <p>According to SEC data on Collective Investment Schemes
+      <a href="https://nairametrics.com/2026/04/06/uhomes-reitf-vs-updc-reitf-which-offers-better-value-in-2026/" target="_blank" rel="noopener">[Nairametrics analysis]</a>,
+      there are <strong>six REIT funds</strong> currently available in Nigeria:</p>
+
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>#</th><th>Fund</th><th>NGX Ticker</th><th>Structure</th><th>Manager</th><th>Focus</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><strong>UPDC Real Estate Investment Trust</strong></td><td>UPDCREIT</td><td>NGX-listed REIT</td><td>Stanbic IBTC Asset Management</td><td>Diversified commercial/residential Lagos</td></tr>
+            <tr><td>2</td><td><strong>Union Homes REIT Fund</strong></td><td>UHOMREIT</td><td>Listed</td><td>Union Homes/Aso Savings</td><td>Luxury Ikoyi/Victoria Island residential</td></tr>
+            <tr><td>3</td><td><strong>SFS Real Estate Investment Trust Fund</strong> (formerly Skye Shelter Fund)</td><td>SFSREIT</td><td>Listed</td><td>SFS Capital</td><td>Lekki (Lagos) residential focus</td></tr>
+            <tr><td>4</td><td><strong>Housing Solution Fund</strong></td><td>n/a</td><td>Open-ended</td><td>Federal Mortgage Bank-aligned</td><td>Affordable housing</td></tr>
+            <tr><td>5</td><td><strong>MOFI Real Estate Investment Fund</strong></td><td>n/a</td><td>Closed</td><td>Ministry of Finance Incorporated</td><td>Government-aligned property assets</td></tr>
+            <tr><td>6</td><td><strong>Nigeria Real Estate Investment Fund</strong></td><td>n/a</td><td>Mutual fund</td><td>Various</td><td>Diversified</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p>The three listed and most-traded REITs you'll actually encounter as a retail investor are
+      <strong>UPDCREIT, UHOMREIT, and SFSREIT</strong>.</p>
+
+    <h3>9.6.3 · UPDC REIT: The "default" Nigerian REIT</h3>
+    <ul>
+      <li><strong>Size:</strong> Total assets ₦37.74 billion (March 2026), portfolio value ~₦29.59 billion in investment property</li>
+      <li><strong>Price (mid-2026):</strong> ~₦10.15 per unit</li>
+      <li><strong>2026 Q1 results:</strong> Revenue ₦1.03bn (+30% YoY), Profit ₦752.5m (+36% YoY), rental income up <strong>82%</strong> <a href="https://africanfinancials.com/document/ng-updcrei-2026-ir-q1/" target="_blank" rel="noopener">[Q1 2026 report]</a></li>
+      <li><strong>Manager:</strong> Stanbic IBTC Asset Management</li>
+      <li><strong>Properties:</strong> Mixed commercial and residential across Lagos</li>
+      <li><strong>2025 price gain:</strong> +30% YtD</li>
+      <li><strong>2026 YtD (as of April):</strong> +18.84%</li>
+      <li><span class="badge badge--ok">Pros</span> Largest, most liquid, most professionally managed. Real cash-generative rental income.</li>
+      <li><span class="badge badge--warn">Cons</span> Lower dividend yield than the next two; price already had a strong run.</li>
+    </ul>
+
+    <h3>9.6.4 · Union Homes REIT: The high-growth headline-grabber</h3>
+    <ul>
+      <li><strong>Focus:</strong> Luxury Ikoyi and Victoria Island residential</li>
+      <li><strong>2025 price gain:</strong> +42% YtD</li>
+      <li><strong>2026 YtD (as of April):</strong> +39.83%, best of the three</li>
+      <li><strong>Earnings per unit (2025):</strong> ₦96.84</li>
+      <li><strong>P/E:</strong> 0.75x (looks dramatically cheap on accounting earnings)</li>
+      <li><span class="badge badge--ok">Pros</span> Strong recent price performance; trades below book value.</li>
+      <li><span class="badge badge--warn">Cons</span> Much of the "profit" comes from <strong>fair-value gains on property revaluations</strong>, not cash income. The 0.75x P/E reflects accounting earnings, not distributable cash flow. Lower liquidity than UPDCREIT.</li>
+    </ul>
+
+    <h3>9.6.5 · SFS REIT: The Lekki residential play</h3>
+    <ul>
+      <li><strong>2026 Q1 results:</strong> Profit jumped <strong>762% to ₦4.1 billion</strong>, NAV per unit up 132% to ₦323.11</li>
+      <li><strong>Headline distribution per unit:</strong> ₦28.30 (proposed, +31.6% YoY)</li>
+      <li><strong>Source of profit:</strong> A massive ₦3.48 billion <strong>fair-value gain</strong> on revaluation of Lekki residential properties <a href="https://propertyaccess.ng/sfs-reit-profit-jumps-762-to-n4-1-billion/" target="_blank" rel="noopener">[Property Access]</a>, which is a paper/accounting gain, not cash</li>
+      <li><strong>Underlying operational growth:</strong> Gross income up 29.3%, net operating income up 31.7%, strong but nothing like 762%</li>
+      <li><span class="badge badge--ok">Pros</span> Strong distributable income; meaningful dividend yield.</li>
+      <li><span class="badge badge--warn">Cons</span> Concentrated in one location (Lekki); the headline 762% profit is misleading.</li>
+    </ul>
+
+    <h3>9.6.6 · The headline-profit trap (read this carefully)</h3>
+    <p>You'll see exciting numbers like "SFS REIT profit jumps 762%" or "Union Homes EPS ₦96.84". Most of these
+      are <strong>not cash you receive</strong>: they are <strong>accounting revaluations</strong> of how much
+      the properties are worth on paper, often using new valuation methodology (IAS 40 fair-value model) for
+      the first time.</p>
+
+    <p>The relevant questions for a REIT investor are:</p>
+    <ol>
+      <li><strong>What is the distributable income per unit?</strong> (The cash you actually get as dividends.)</li>
+      <li><strong>Is rental income growing? By how much?</strong></li>
+      <li><strong>What's the dividend yield vs the price?</strong></li>
+      <li><strong>Is the property portfolio concentrated or diversified?</strong></li>
+      <li><strong>What's the occupancy rate? Are tenants paying on time?</strong></li>
+    </ol>
+    <p>By those measures, <strong>UPDC REIT is the cleanest</strong>: its rental income is up 82% YoY in Q1
+      2026, it has a diversified portfolio, and its profits reflect actual cash flow rather than mostly
+      fair-value revaluations.</p>
+
+    <h3>9.6.7 · REIT yields and dividends</h3>
+    <p>Nigerian REIT dividend yields in 2026 range broadly:</p>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>REIT</th><th>Approximate dividend yield (2026)</th></tr></thead>
+          <tbody>
+            <tr><td>UPDC REIT</td><td>~5–7%</td></tr>
+            <tr><td>SFS REIT</td><td>~8–9% (after revaluation-driven distribution increase)</td></tr>
+            <tr><td>Union Homes REIT</td><td>~3–5% (most return has come from price appreciation, not dividends)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p>These yields are <strong>before naira depreciation</strong>. In GBP terms, REIT dividends face the same
+      currency risk as MMF income.</p>
+
+    <h3>9.6.8 · REIT Mutual Funds (mutual fund wrappers around REIT holdings)</h3>
+    <p>In 2025, <strong>the six REITF mutual funds delivered an average return of 19.7%</strong>, with the
+      UPDC-linked fund (managed by Stanbic IBTC Asset Management) offering <strong>30% YtD</strong>: the
+      highest. This compares to <strong>38% YtD for UPDCREIT directly on the NGX</strong>: meaning the mutual
+      fund wrapper underperforms the underlying listed REIT, but it does so with smaller minimums and easier
+      access for retail investors.</p>
+
+    <h3>9.6.9 · Real Estate Crowdfunding / Co-investment Platforms</h3>
+    <p>These are <em>not</em> REITs. They are platforms that pool retail investors to:</p>
+    <ul>
+      <li>Buy land or property collectively</li>
+      <li>Earn rental income proportionally</li>
+      <li>Resell at appreciation</li>
+    </ul>
+
+    <p><strong>The three main ones in 2026:</strong></p>
+
+    <h4>A · Coreum</h4>
+    <ul>
+      <li>Co-investment model: pool funds, collectively buy properties, share rental income and capital gains</li>
+      <li>Lagos-based; offers residential, commercial, and land investments</li>
+      <li>Different properties have different minimum buy-ins</li>
+      <li><strong>Status check needed:</strong> Verify their SEC-registration status before investing. Co-investment platforms in Nigeria have historically operated in regulatory grey areas.
+        <a href="https://www.onlinemarketplaces.com/articles/co-investment-platform-coreum-launches-in-nigeria/" target="_blank" rel="noopener">[Coreum launch coverage]</a></li>
+    </ul>
+
+    <h4>B · RealVest</h4>
+    <ul>
+      <li>More like a <strong>structured payment plan to actually buy a home</strong> than a fractional investment</li>
+      <li>Offers homes in Mowe (Ogun), Ibeju-Lekki, Gwagwalada (Abuja), Owerri, Ogbomosho, Trademoore</li>
+      <li>Payment plans of 5–10 years</li>
+      <li><strong>This is property purchase financing, not investment.</strong> Useful if you want a Nigerian home in 5–10 years; not a way to grow your money.
+        <a href="https://www.realvest.ng/" target="_blank" rel="noopener">[realvest.ng]</a></li>
+    </ul>
+
+    <h4>C · Risevest</h4>
+    <ul>
+      <li><strong>Officially SEC-licensed (February 2026)</strong> through its subsidiary RV Fund Management Limited <a href="https://technext24.com/2026/02/19/risevest-secures-sec-licence/" target="_blank" rel="noopener">[Technext]</a>. Note: had a regulatory dispute with SEC in 2025, now resolved.</li>
+      <li>Offers USD-denominated investments including <strong>US fractional real estate</strong>, US stocks, and fixed income</li>
+      <li>Minimum $10</li>
+      <li>Historical returns 8–15% in USD (their claim)</li>
+      <li><strong>Critically:</strong> the real estate exposure is to <em>US properties</em>, not Nigerian. So you get dollar-denominated real estate returns while being a Nigerian. <a href="https://risevest.com/" target="_blank" rel="noopener">[risevest.com]</a></li>
+    </ul>
+
+    <h3>9.6.10 · Regulatory &amp; "is it safe?" checks</h3>
+    <p>The single most important question for any Nigerian property platform: <strong>Are they SEC-registered
+      as a Fund Manager / Portfolio Manager?</strong></p>
+    <p>Quick verification process:</p>
+    <ol class="steps">
+      <li class="step">Go to <a href="https://sec.gov.ng/" target="_blank" rel="noopener">sec.gov.ng</a> → Registered Companies / Capital Market Operators</li>
+      <li class="step">Search the company name</li>
+      <li class="step">Verify their licence type (Fund Manager, Portfolio Manager, etc.)</li>
+      <li class="step">Check that their licence is <em>current</em> (not expired or under review)</li>
+    </ol>
+    <p>Why this matters: in 2024–2025, multiple Nigerian "investment platforms" promising 20%+ returns
+      collapsed or had SEC interventions (e.g., the broader fintech-investment scrutiny that briefly affected
+      Risevest, Bamboo, Trove). SEC-regulation is your single biggest protection.</p>
+
+    <h3>9.6.11 · Real Estate Crowdfunding: honest take</h3>
+    <p>The honest truth: <strong>most Nigerian property crowdfunding platforms have a short, mixed track
+      record.</strong></p>
+
+    <div class="proscons">
+      <div class="proscons__col proscons__col--pro">
+        <div class="proscons__title"><span class="badge badge--ok">What works</span></div>
+        <ul>
+          <li>Genuine fractional ownership of well-located, cash-flowing properties (rare but exists)</li>
+          <li>Co-investment with experienced developers on identifiable plots</li>
+        </ul>
+      </div>
+      <div class="proscons__col proscons__col--con">
+        <div class="proscons__title"><span class="badge badge--no">What fails (often)</span></div>
+        <ul>
+          <li>"Buy plots of land in [up-and-coming area] and we'll resell at 3× in 2 years"; most never deliver</li>
+          <li>High-promise "real estate funds" not registered with SEC</li>
+          <li>Platforms that mix property investment with multi-level-marketing (MLM-style)</li>
+          <li>Pre-construction "off-plan" plays that depend entirely on the developer's solvency</li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>Red flags</h4>
+    <ul>
+      <li>Returns advertised above 25% in naira (suspicious)</li>
+      <li>No SEC registration</li>
+      <li>Unclear ownership of the underlying property</li>
+      <li>Long lock-in periods with no secondary market</li>
+      <li>High-pressure sales tactics or referral bonuses (MLM mechanic)</li>
+    </ul>
+
+    <h3>9.6.12 · Should a UK-based investor bother with Nigerian REITs/property funds?</h3>
+    <div class="proscons">
+      <div class="proscons__col proscons__col--pro">
+        <div class="proscons__title"><span class="badge badge--ok">The case for</span></div>
+        <ul>
+          <li>Diversification away from UK/US-only exposure</li>
+          <li>Hedge if Nigeria does experience structural improvement (urbanization is real, demand for quality housing is real)</li>
+          <li>Potential dividend income to a Nigerian account you can use during family visits</li>
+        </ul>
+      </div>
+      <div class="proscons__col proscons__col--con">
+        <div class="proscons__title"><span class="badge badge--no">The case against</span></div>
+        <ul>
+          <li>Currency risk eats most returns</li>
+          <li>Concentration risk (most are heavily exposed to Lagos premium property)</li>
+          <li>Liquidity risk (small free float, thin trading)</li>
+          <li>Tax administrative burden for a UK tax resident</li>
+          <li>You can get <strong>global REIT exposure</strong> through UK-listed ETFs (VAP, IPRP, HSBC Developed REITs): cheaper, more diversified, no currency mismatch</li>
+        </ul>
+      </div>
+    </div>
+
+    <p><strong>My honest verdict:</strong> For a UK-resident investor with no immediate need for
+      naira-denominated returns, <strong>a small allocation (0–3% of total portfolio) in UPDC REIT</strong> if
+      you want any Nigerian property exposure is enough. Skip the crowdfunding platforms unless you have
+      specific, well-researched reasons. Get your real estate diversification mostly via <strong>global REIT
+      ETFs in your UK ISA</strong>.</p>
+
+    <h3>9.6.13 · Direct property purchase in Nigeria</h3>
+    <p>If you're considering buying physical property in Nigeria (because you might return, or for family, or
+      as a long-term asset), key principles:</p>
+    <ul>
+      <li><strong>Title verification is everything.</strong> Use a reputable lawyer, do <strong>Certificate of Occupancy (C of O) / Governor's Consent verification</strong> at the state lands registry. Nigerian property fraud is endemic.</li>
+      <li><strong>Lagos vs everywhere else:</strong> Lagos commercial/residential is the most liquid market with the most appreciation, but also the most expensive and most fraud-prone. Abuja is more stable but lower returns. State capitals (Port Harcourt, Ibadan, Enugu) have niche opportunities.</li>
+      <li><strong>Best areas (2026):</strong> Lagos (Lekki Phase 1, Ikoyi, V/I for premium; Ibeju-Lekki for growth), Abuja (Maitama, Asokoro for premium; Lugbe, Gwarinpa for value).</li>
+      <li><strong>Avoid:</strong> Off-plan/pre-construction from unknown developers; family land with disputed title; "discounted bulk plots" in remote areas with no infrastructure plan.</li>
+      <li><strong>Transaction costs:</strong> 8–15% all-in including legal, agency, stamp duty, government fees, and "facilitation", much higher than developed markets.</li>
+    </ul>
+    <p><strong>For your stage of life (31, in UK, optimising Graduate Route): direct Nigerian property purchase
+      is premature.</strong> Revisit only if you decide to permanently return to Nigeria or once your global
+      portfolio reaches £150k+.</p>
+
+    <h3>9.6.14 · How to access Nigerian REITs from the UK</h3>
+    <p>NGX-listed REITs (UPDCREIT, UHOMREIT, SFSREIT) trade on the Nigerian Exchange and can be bought through:</p>
+    <ul>
+      <li><a href="https://www.investbamboo.com/" target="_blank" rel="noopener">Bamboo</a>: easiest mobile access; 1.5% trade fee</li>
+      <li><a href="https://stockbrokers.stanbicibtc.com/" target="_blank" rel="noopener">Stanbic IBTC Stockbrokers</a>: directly via your IBTC account</li>
+      <li><a href="https://cordros.com/" target="_blank" rel="noopener">Cordros Securities</a>, <a href="https://www.armsecurities.com.ng/" target="_blank" rel="noopener">ARM Securities</a>, <a href="https://www.cardinalstone.com/" target="_blank" rel="noopener">Cardinalstone</a>: traditional Nigerian stockbrokers</li>
+      <li><a href="https://trove.finance/" target="_blank" rel="noopener">Trove Finance</a>: has equity coverage including REITs</li>
+    </ul>
+    <p>REIT <em>mutual funds</em> are bought directly through the fund manager (Stanbic IBTC Asset Management,
+      etc.), usually with much lower minimums than buying the listed REIT directly.</p>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>If you want <strong>any</strong> Nigerian real estate exposure: get it via <strong>UPDCREIT</strong>
+        (NGX-listed, well-managed, cash-flow positive), in a 0–3% portfolio allocation, accessed via Bamboo or
+        Stanbic IBTC. <strong>Skip the property crowdfunding platforms</strong> unless you've personally
+        verified SEC registration <em>and</em> understood the underlying property documentation <em>and</em>
+        have direct contact with the platform. For your <em>core</em> real estate diversification, use
+        <strong>a global REIT ETF in your UK ISA</strong> (VAP or HPRD). Direct Nigerian property purchase:
+        defer for at least 5–7 years until your situation is clearer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 10 REITs vs PROPERTY
+============================================================ -->
+<section class="section" id="s10">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 10</span>
+      <h2 class="section__title">Real Estate: REITs vs Physical Property</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>Should I save up for a house, or just buy a REIT?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>For your first 5–7 years of investing, REIT (small slice). After £100k+ portfolio and a clear plan to stay in the UK, reconsider physical property.</div>
+      </div>
+    </div>
+
+    <h3>10.1 · Physical property (UK)</h3>
+    <div class="proscons">
+      <div class="proscons__col proscons__col--pro">
+        <div class="proscons__title"><span class="badge badge--ok">Pros</span></div>
+        <ul>
+          <li>You eventually own a tangible asset.</li>
+          <li>UK property has appreciated long-term (though not uniformly).</li>
+          <li>Rental income.</li>
+          <li>Mortgage debt is "good debt" if structured well.</li>
+        </ul>
+      </div>
+      <div class="proscons__col proscons__col--con">
+        <div class="proscons__title"><span class="badge badge--no">Cons</span></div>
+        <ul>
+          <li>Massive deposit needed (£25k–£75k+ for typical UK first home).</li>
+          <li>3–10% in transaction costs (stamp duty, legal, agents).</li>
+          <li>Illiquid; selling takes months.</li>
+          <li>Maintenance, voids, problem tenants.</li>
+          <li>High concentration in one asset.</li>
+          <li><strong>For an international student/early professional, this is a 5–10-year goal, not a now-decision.</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>10.2 · LISA can become a House Down-Payment Engine</h3>
+    <p>Critical: <strong>a LISA can be used to buy your first UK home</strong> (up to £450,000 purchase price)
+      without penalty. You'd build the LISA up over 5+ years, then use it + savings as your deposit.
+      <a href="https://www.gov.uk/lifetime-isa" target="_blank" rel="noopener">[gov.uk LISA rules]</a></p>
+    <p>This is one of the highest-value plays available to you. <strong>9 years of £4,000/year LISA
+      contributions + 25% government top-ups + investment growth = potentially £60k+ for a first home
+      down-payment.</strong></p>
+
+    <h3>10.3 · REITs: Real Estate Investment Trusts</h3>
+    <p>A <strong>REIT</strong> is a publicly traded company that owns income-producing real estate (offices,
+      warehouses, shopping centres, apartments, data centres). You buy a share, you own a sliver of their
+      entire property portfolio.</p>
+
+    <p><strong>Advantages:</strong></p>
+    <ul>
+      <li>Liquid (trades like a stock).</li>
+      <li>Small minimum investment.</li>
+      <li>Diversified across many properties.</li>
+      <li>No tenant or maintenance headaches.</li>
+      <li>Often pays high dividends (REITs must distribute 90% of profits to maintain REIT status).</li>
+    </ul>
+
+    <p><strong>UK / Global REIT ETFs worth knowing:</strong></p>
+    <ul>
+      <li><strong>VAP</strong> (Vanguard Global REIT UCITS): global property exposure</li>
+      <li><strong>IPRP</strong> (iShares European Property ex-UK)</li>
+      <li><strong>HSBC FTSE EPRA/NAREIT Developed UCITS ETF (HPRD)</strong>: developed-market REITs</li>
+      <li><strong>UK REITs directly:</strong> SEGRO (warehouses/logistics), Land Securities (Landsec), British Land</li>
+    </ul>
+
+    <p><strong>Disadvantages:</strong></p>
+    <ul>
+      <li>REITs are <em>more correlated to stocks than people think</em>: they fell heavily in 2022.</li>
+      <li>They are sensitive to interest rates (when rates rise, REIT values often fall).</li>
+      <li>Dividends from REITs are taxed differently than regular dividends in the UK (treated as property income).</li>
+    </ul>
+
+    <h3>10.4 · Honest take</h3>
+    <p>For your first 5–7 years of investing: <strong>5% in a global REIT ETF is plenty</strong> for real
+      estate exposure. After you have a meaningful portfolio (£100k+), reconsider direct property purchase if
+      you've decided to stay in the UK and want to own a home.</p>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Don't buy physical property in your first 5 years of investing unless you're settling somewhere
+        permanently. Get real-estate exposure via a small (5%) REIT ETF allocation. Use a LISA <em>specifically</em>
+        to build up a first-home deposit if you might stay in the UK.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 11 CURRENCY STRATEGY
+============================================================ -->
+<section class="section" id="s11">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 11</span>
+      <h2 class="section__title">Currency Strategy: The Quiet Killer</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>How do I handle living between currencies (GBP, USD, EUR, NGN)?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>Currency is the quiet killer of international investors, more important than people think. Here's the strategy.</div>
+      </div>
+    </div>
+
+    <h3>11.1 · Your likely currency exposure</h3>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Currency</th><th>Where it comes from</th></tr></thead>
+          <tbody>
+            <tr><td><strong>GBP</strong></td><td>UK salary, UK expenses, UK assets</td></tr>
+            <tr><td><strong>USD</strong></td><td>Global stock ETFs (most are USD-denominated underneath)</td></tr>
+            <tr><td><strong>EUR</strong></td><td>Some European holdings via global funds</td></tr>
+            <tr><td><strong>NGN</strong></td><td>Any Nigerian assets, family transfers</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h3>11.2 · Where most international students go wrong</h3>
+    <ul>
+      <li>Holding cash in NGN "just in case" while NGN devalues by 15%+ per year.</li>
+      <li>Sending large GBP amounts to Nigeria via expensive bank wires.</li>
+      <li>Buying Nigerian stocks when global equity ETFs would deliver better risk-adjusted returns.</li>
+      <li>Ignoring GBP-hedged versions of global ETFs (more on this below).</li>
+    </ul>
+
+    <h3>11.3 · The "GBP-hedged vs unhedged" question for bonds</h3>
+    <p>When you buy a global bond ETF, you have two versions:</p>
+    <ul>
+      <li><strong>Unhedged</strong>: you bear the currency risk of all the underlying bonds.</li>
+      <li><strong>GBP-hedged</strong>: the fund's currency exposure is offset back to GBP.</li>
+    </ul>
+    <p>For <strong>bonds (your stability ballast)</strong>, <strong>always prefer GBP-hedged</strong>. Otherwise
+      the currency moves can wipe out your "safe" bond returns.</p>
+    <p>For <strong>equities</strong>, hedging is typically <em>not</em> worth the cost. The exposure to multiple
+      currencies is itself diversification.</p>
+
+    <h3>11.4 · Best transfer services (UK → Nigeria → UK)</h3>
+    <ul>
+      <li><a href="https://wise.com/" target="_blank" rel="noopener">Wise (TransferWise)</a>: interbank rates, small flat fee, very transparent.</li>
+      <li><a href="https://www.sendwave.com/" target="_blank" rel="noopener">Sendwave</a>: fast, mobile-first, sometimes better for small amounts.</li>
+      <li><a href="https://www.revolut.com/" target="_blank" rel="noopener">Revolut</a>: works for many corridors, weekend fees apply.</li>
+    </ul>
+    <p><strong>Avoid:</strong> UK high-street banks for international transfers (their FX margins are 2–5%, so
+      they bleed you on every transaction).</p>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Earn in GBP, invest mostly in GBP-listed global ETFs, hedge your bonds to GBP, keep Nigerian exposure
+        small and intentional, and never use a UK high-street bank for currency conversion.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 12 DEATH / INHERITANCE
+============================================================ -->
+<section class="section" id="s12">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 12</span>
+      <h2 class="section__title">Death, Inheritance, and Family: The Conversations Nobody Has</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>What about death, inheritance and family? Is that something I should even think about now?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>Brief but honest: it matters more than you think, especially as an international person. Read this once and act on the two cheap things.</div>
+      </div>
+    </div>
+
+    <h3>12.1 · UK Inheritance Tax (IHT)</h3>
+    <ul>
+      <li>UK domiciled / "long-term UK resident" individuals are taxed on <strong>worldwide assets</strong> at death.</li>
+      <li>IHT is <strong>40% on estate value above £325,000</strong> (the "nil-rate band"), with extra £175,000 if leaving a home to direct descendants. <a href="https://www.gov.uk/inheritance-tax" target="_blank" rel="noopener">[gov.uk IHT]</a></li>
+      <li>ISAs and most pensions normally fall <em>outside</em> the IHT estate or are passed differently.</li>
+      <li><strong>Pension lump sums currently pass to beneficiaries IHT-free if you die before 75</strong> (rules under review, set to change in coming years).</li>
+    </ul>
+    <p><strong>For a 31-year-old single Nigerian on a student visa, IHT is not yet your biggest concern</strong>;
+      your UK estate is small. But as it grows, become aware.</p>
+
+    <h3>12.2 · Can children / heirs inherit?</h3>
+    <p>Yes, but mechanics differ by account:</p>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Account</th><th>Who can inherit?</th><th>How</th></tr></thead>
+          <tbody>
+            <tr><td><strong>ISA</strong></td><td>Anyone via your will. Spouse can inherit "Additional Permitted Subscription" (extra ISA room)</td><td>Through probate; provider transfers to beneficiary</td></tr>
+            <tr><td><strong>Pension/SIPP</strong></td><td>Via nominated beneficiaries (NOT your will; the nomination form is what matters)</td><td>Outside probate; usually faster</td></tr>
+            <tr><td><strong>Standard brokerage</strong></td><td>Anyone via your will</td><td>Through probate</td></tr>
+            <tr><td><strong>Bamboo / Nigerian stocks</strong></td><td>Heirs (Nigerian inheritance rules apply)</td><td>Complicated; can take time</td></tr>
+            <tr><td><strong>Physical property</strong></td><td>Anyone via your will</td><td>Through probate</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p><strong>Critical action:</strong> Once you have meaningful assets (&gt;£20k), <strong>write a will</strong>.
+      Use <a href="https://farewill.com/" target="_blank" rel="noopener">Farewill</a> (~£100),
+      <a href="https://makeawillonline.co.uk/" target="_blank" rel="noopener">Make a Will Online</a>, or a
+      solicitor. For multi-jurisdiction assets, consider getting <strong>separate wills</strong> for UK assets
+      and Nigerian assets; talk to a cross-border solicitor.</p>
+
+    <h3>12.3 · Pension beneficiary nominations</h3>
+    <p><strong>The single most-forgotten action by young investors.</strong> Whichever pension you open,
+      <strong>fill in the beneficiary nomination form immediately</strong>. Otherwise the pension scheme
+      decides where the money goes, and it might not be where you'd want.</p>
+
+    <h3>12.4 · Nigerian assets</h3>
+    <ul>
+      <li>Nigerian assets follow <strong>Nigerian inheritance law</strong> (Islamic, Customary, or English Common Law depending on state and circumstances).</li>
+      <li>A Nigerian will is essential if you have Nigerian assets.</li>
+      <li>Bamboo accounts: you can usually nominate a next-of-kin in-app.</li>
+    </ul>
+
+    <h3>12.5 · If you marry or have children</h3>
+    <p>All of the above changes substantially. Revisit your will, beneficiary nominations, life insurance, and
+      ISA strategy at every major life event.</p>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Once you have £20k+ invested, spend £100 writing a will. Fill out beneficiary nomination forms on any
+        pension/SIPP immediately. As your situation gets more international, consider parallel UK and Nigerian
+        wills.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 13 TAX FOR INTERNATIONALS
+============================================================ -->
+<section class="section" id="s13">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 13</span>
+      <h2 class="section__title">Tax Considerations as an International Person</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>How does tax work for someone like me, a Nigerian in the UK, possibly moving later?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>Residency, not citizenship, and the ISA wrapper fixes most of it. Here's the framework. You'll need a real accountant once stakes grow.</div>
+      </div>
+    </div>
+
+    <h3>13.1 · Tax follows residency, not citizenship (mostly)</h3>
+    <ul>
+      <li><strong>Nigeria</strong> does not tax citizens on worldwide income (Nigeria uses residence-based taxation).</li>
+      <li><strong>UK</strong> taxes residents on worldwide income.</li>
+      <li><strong>US</strong> is the famous exception; it taxes citizens worldwide. (Not relevant to you.)</li>
+    </ul>
+
+    <h3>13.2 · Statutory Residence Test (SRT)</h3>
+    <p>The UK uses the <strong>Statutory Residence Test</strong> to decide if you're a UK tax resident in a
+      given year. The basics:</p>
+    <ul>
+      <li><strong>&gt;183 days in the UK in a tax year → automatically UK tax resident.</strong></li>
+      <li>Various "automatic overseas" and "sufficient ties" tests for borderline cases.
+        <a href="https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt" target="_blank" rel="noopener">[gov.uk SRT guidance]</a></li>
+    </ul>
+    <p><strong>As an MSc student in the UK,</strong> you almost certainly are UK tax resident.</p>
+
+    <h3>13.3 · Key UK tax allowances (2026/27)</h3>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Allowance</th><th>Amount</th><th>What it covers</th></tr></thead>
+          <tbody>
+            <tr><td>Personal Allowance</td><td>£12,570</td><td>Tax-free income (frozen until 2031)</td></tr>
+            <tr><td>Personal Savings Allowance</td><td>£1,000 (basic), £500 (higher), £0 (additional)</td><td>Tax-free savings interest</td></tr>
+            <tr><td>Dividend Allowance</td><td>£500</td><td>Tax-free dividends</td></tr>
+            <tr><td>CGT Allowance</td><td>£3,000</td><td>Tax-free capital gains</td></tr>
+            <tr><td>ISA Allowance</td><td>£20,000</td><td>Tax-free <em>everything</em> inside ISA</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p>The ISA wrapper makes most of these other allowances irrelevant; anything inside an ISA doesn't count.</p>
+
+    <h3>13.4 · The US dividend withholding problem (and the fix)</h3>
+    <p>You correctly noted you're worried about tax. Here's a real one:</p>
+    <ul>
+      <li>US companies pay dividends with <strong>30% US withholding</strong> to non-residents <em>by default</em>.</li>
+      <li>The UK-US tax treaty reduces this to <strong>15%</strong> if you submit a Form W-8BEN claiming UK tax residency. <a href="https://www.irs.gov/forms-pubs/about-form-w-8-ben" target="_blank" rel="noopener">[IRS W-8BEN]</a></li>
+      <li><strong>Nigeria has no active US tax treaty for individuals → 30% withholding sticks for Nigerian residents.</strong></li>
+    </ul>
+    <p><strong>This is why being UK tax resident matters financially.</strong> Submit a W-8BEN to your UK
+      broker (most do it automatically as part of account setup). You save 15 percentage points on every US
+      dividend.</p>
+    <p>UK-domiciled ETFs (like VWRP, VUAG) <strong>also reduce dividend withholding through the fund
+      structure</strong>: it's done at the fund level via the Ireland-US treaty (15% rate).</p>
+
+    <h3>13.5 · Capital Gains Tax outside an ISA</h3>
+    <p>If you ever invest outside an ISA (e.g., via a regular brokerage account because you've maxed the ISA):</p>
+    <ul>
+      <li>First £3,000 of gains per year = tax-free.</li>
+      <li>Above that: 18% if you're a basic-rate taxpayer, 24% if higher.
+        <a href="https://www.gov.uk/capital-gains-tax" target="_blank" rel="noopener">[gov.uk CGT]</a></li>
+      <li>You only pay when you sell, not on unrealised gains.</li>
+    </ul>
+
+    <h3>13.6 · Dividend tax outside an ISA</h3>
+    <ul>
+      <li>First £500 of dividends per year = tax-free.</li>
+      <li>Above that (2026/27 rates): 10.75% basic / 35.75% higher / 39.35% additional.
+        <a href="https://www.gov.uk/tax-on-dividends" target="_blank" rel="noopener">[gov.uk dividend tax]</a></li>
+    </ul>
+
+    <h3>13.7 · If you leave the UK</h3>
+    <ul>
+      <li>Your ISA continues to grow tax-free <strong>under UK law</strong>, but you can't add more.</li>
+      <li>Nigeria may then tax dividend income (Nigerian rates apply to your worldwide income if Nigerian tax resident).</li>
+      <li>Pensions get complicated; talk to a cross-border adviser.</li>
+      <li>Selling property may trigger UK Non-Resident CGT.</li>
+    </ul>
+
+    <h3>13.8 · The "non-dom" reform</h3>
+    <p>UK's "non-dom" regime ended in April 2025. As an international student, this rarely affected you anyway,
+      but the new "four-year FIG (Foreign Income and Gains) regime" gives new UK arrivals four years of tax
+      exemption on foreign income/gains. If you arrived in the UK in 2024 or later and have <em>significant</em>
+      foreign income, this could matter; talk to a tax adviser.
+      <a href="https://www.gov.uk/government/publications/reforming-the-taxation-of-non-uk-domiciled-individuals" target="_blank" rel="noopener">[HMRC non-dom reform]</a></p>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>Once your situation matures (full-time UK job, multiple income sources, larger portfolio), spend
+        £300–£500 on a UK tax accountant consultation. They will save you many multiples of that. Cross-border
+        tax is not a DIY area.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ZOOM CALLOUT 2
+============================================================ -->
+<section class="container" data-aos="fade-up">
+  <div class="zoom-callout" data-zoom>
+    <div class="zoom-callout__label">The plan, in one sentence</div>
+    <p class="zoom-callout__quote">
+      <strong>Phase 1:</strong> £200–£300/mo all into one global ETF inside an ISA. Build the habit.
+      <strong>Phase 2:</strong> ~£800/mo split between S&amp;S ISA, Cash ISA, and (maybe) a LISA.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 14 TAILORED TACTICAL PLAN
+============================================================ -->
+<section class="section" id="s14">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 14</span>
+      <h2 class="section__title">Your Tailored Tactical Plan (Based On Your Confirmed Numbers)</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>OK enough theory; what's <em>my</em> actual plan, given everything you know about me?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>Two phases, no debt to clear, emergency fund already in place. We can skip the prerequisites and go straight to investing.</div>
+      </div>
+    </div>
+
+    <div class="hero__update" style="margin-bottom: 2rem;">
+      <strong>Your confirmed inputs (May 2026):</strong><br/>
+      Debt: None ✓ · Emergency fund: in place ✓ · Investable cashflow now (MSc): £200–£300/mo ·
+      Investable cashflow after MSc (PSW): ~£800/mo · Visa: MSc → 2-yr Graduate Route → undecided ·
+      UK tax resident; Nigerian banks/BVN/NIN/address active back home.
+    </div>
+
+    <h3>14.1 · The two-phase plan in one sentence</h3>
+    <div class="grid grid--2">
+      <div class="card" style="border-top: 4px solid var(--color-secondary);">
+        <div class="card__label">Phase 1 · Now → graduation</div>
+        <div class="card__value">£200–£300/mo</div>
+        <p style="margin: 0;">All into one global ETF inside a Stocks &amp; Shares ISA. Nothing fancy. Build
+          the habit and the foundation.</p>
+      </div>
+      <div class="card" style="border-top: 4px solid var(--color-accent-green);">
+        <div class="card__label">Phase 2 · PSW start · ~mid-2026+</div>
+        <div class="card__value">£800/mo</div>
+        <p style="margin: 0;">Split between S&amp;S ISA core, a UK Cash ISA buffer, and optionally a LISA,
+          depending on how UK-permanent you're feeling at that point.</p>
+      </div>
+    </div>
+
+    <h3>14.2 · Phase 1: During MSc (current period, ~6–12 months)</h3>
+    <p><strong>Target:</strong> Build a £1,800–£3,600 portfolio in a Stocks &amp; Shares ISA by graduation.
+      Habit &gt; size.</p>
+
+    <h4>Step 1: Open one Stocks &amp; Shares ISA: Trading 212</h4>
+    <p>For your specific situation (small monthly amounts, beginner, want fractional shares, want simplicity),
+      the clear winner is <strong><a href="https://www.trading212.com/" target="_blank" rel="noopener">Trading 212 Stocks &amp; Shares ISA</a></strong>:</p>
+
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Feature</th><th>Trading 212 ISA</th><th>InvestEngine ISA</th><th>Vanguard UK ISA</th></tr></thead>
+          <tbody>
+            <tr><td>Platform fee</td><td><strong>£0</strong></td><td>£0 (DIY plan)</td><td>£4/month under £32k</td></tr>
+            <tr><td>Trade commission</td><td><strong>£0</strong></td><td>£0</td><td>£0 on Vanguard funds</td></tr>
+            <tr><td>FX fee on USD-denominated ETFs</td><td>0.15%</td><td>None (ETFs in GBP)</td><td>None</td></tr>
+            <tr><td>Fractional shares</td><td><strong>Yes</strong> (key for £200/mo)</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td>What you can buy</td><td>Stocks + ETFs (12,000+)</td><td>ETFs only (~830)</td><td>Vanguard funds + select ETFs</td></tr>
+            <tr><td>Cash ISA on same platform</td><td><strong>Yes</strong></td><td>No</td><td>No</td></tr>
+            <tr><td>App quality</td><td>Best</td><td>Good</td><td>Functional</td></tr>
+            <tr><td>Best for your stage</td><td><span class="badge badge--ok">✓ Winner</span></td><td>Close second</td><td>Skip for now</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p>Open at <a href="https://www.trading212.com/" target="_blank" rel="noopener">trading212.com</a>;
+      the process is mostly online and takes 10–20 minutes. You'll need:</p>
+    <ul>
+      <li>Passport or BRP</li>
+      <li>Proof of UK address (utility bill, bank statement, or university letter)</li>
+      <li>National Insurance Number</li>
+    </ul>
+    <p>If you ever change your mind, you can do an ISA transfer to another provider; your ISA wrapper is
+      portable, and only the platform changes.</p>
+
+    <h4>Step 2: Buy ONE ETF and automate</h4>
+    <p>For Phase 1, you want <strong>one fund</strong> that gives you the entire world's stock market. The
+      single best choice for your situation:</p>
+
+    <div class="card" style="border-left: 4px solid var(--color-secondary); margin: 1rem 0 2rem;">
+      <div class="card__label">Recommended core</div>
+      <div class="card__value">Vanguard FTSE All-World UCITS ETF (Acc)</div>
+      <div class="card__desc">Ticker <code>VWRP</code> · LSE · GBP</div>
+      <ul style="margin-top: 1rem;">
+        <li><strong>Holdings:</strong> ~3,700 companies across developed + emerging markets</li>
+        <li><strong>Geographic split:</strong> ~60% US, 15% Europe, 10% Japan, 10% emerging markets, 5% other</li>
+        <li><strong>Sectors:</strong> Diversified across tech, finance, healthcare, consumer, etc.</li>
+        <li><strong>Ongoing charge (TER):</strong> 0.22%/year, very cheap</li>
+        <li><strong>Accumulating:</strong> dividends are automatically reinvested inside the fund (you don't get cash, you get growth)</li>
+        <li><strong>UCITS:</strong> EU regulated, ISA-eligible, tax-efficient for UK investors</li>
+        <li><strong>Currency:</strong> Priced in GBP on LSE (Trading 212 will buy GBP-denominated shares)</li>
+      </ul>
+    </div>
+
+    <p><strong>Why this one fund is enough for now:</strong> at £200–£300/month, having multiple funds adds
+      complexity without meaningful benefit. VWRP alone gives you exposure to Apple, Microsoft, Google, Amazon,
+      Nvidia, Tesla, Visa, Mastercard, Berkshire Hathaway, Coca-Cola, Nestlé, ASML, Toyota, Tencent, Samsung,
+      and ~3,685 other companies. You don't need anything else until you're past £15k–£20k.</p>
+
+    <p><strong>Alternatives if you want a slight US tilt (more aggressive):</strong></p>
+    <ul>
+      <li><code>VUAG</code>: Vanguard S&amp;P 500 UCITS Accumulating (only top 500 US companies; higher concentration risk but historically higher returns)</li>
+      <li>Not recommended for Phase 1; stick with VWRP for diversification</li>
+    </ul>
+
+    <h4>Step 3: Set up the autopilot</h4>
+    <ol class="steps">
+      <li class="step">Go to your ISA pie / AutoInvest section inside Trading 212</li>
+      <li class="step">Create a pie with <strong>100% VWRP</strong></li>
+      <li class="step">Set a recurring monthly investment of £200 (or whatever you can sustain) on the 1st of each month; pick a date right after your stipend / income lands</li>
+      <li class="step">Enable auto-invest so you don't have to manually buy each month</li>
+      <li class="step">Walk away. Don't check it more than once a month.</li>
+    </ol>
+
+    <div class="takeaway" data-aos="fade-up">
+      <div class="takeaway__label">What this means for you</div>
+      <p>By graduation, you will have <strong>~£1,800–£3,600 invested in 3,700+ global companies</strong>,
+        accumulated automatically, with zero fees, in a tax-free ISA. More importantly, you will have
+        <strong>built the habit</strong> of automated monthly investing, which matters more than the absolute
+        amount at this stage.</p>
+    </div>
+
+    <h3>14.3 · Phase 2: Start of PSW (post-graduation, ~£800/month)</h3>
+    <p>Once you graduate and start earning in the UK (~£800/mo investable), three things change:</p>
+    <ol>
+      <li>You can fund the ISA much more meaningfully (~£9,600/yr).</li>
+      <li><strong>The LISA decision becomes real</strong> (see 14.4 below).</li>
+      <li>You should add a Cash ISA buffer for opportunity / future use.</li>
+    </ol>
+
+    <div class="chart-card" data-aos="fade-up">
+      <div class="chart-card__title">Phase 2 allocation options · monthly £</div>
+      <div class="chart-card__sub">Toggle between Option A (wait-and-see) and Option B (committed to UK).</div>
+      <div class="chart-controls">
+        <button class="chart-toggle is-active" data-phase2="A">Option A · wait-and-see</button>
+        <button class="chart-toggle" data-phase2="B">Option B · committed to UK</button>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="chartPhase2"></canvas></div>
+    </div>
+
+    <p><strong>Default Phase 2 allocation (if LISA decision is "wait and see"):</strong></p>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Bucket</th><th>Monthly</th><th>Annual</th><th>Where</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td><strong>S&amp;S ISA core (VWRP)</strong></td><td>£600</td><td>£7,200</td><td>Trading 212 S&amp;S ISA</td><td>Long-term growth, retirement engine</td></tr>
+            <tr><td><strong>UK Cash ISA buffer</strong></td><td>£150</td><td>£1,800</td><td>Trading 212 Cash ISA (currently ~5% AER)</td><td>Opportunity fund, future home deposit, or fallback</td></tr>
+            <tr><td><strong>Optional Nigeria slice</strong></td><td>£50</td><td>£600</td><td>Bamboo → STANBICIBTC30 ETF, or direct MMF</td><td>Currency-diversified small allocation</td></tr>
+            <tr><td><strong>Total</strong></td><td>£800</td><td>£9,600</td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p><strong>Default Phase 2 allocation (if you commit to staying in UK ≥3 years):</strong></p>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Bucket</th><th>Monthly</th><th>Annual</th><th>Where</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td><strong>LISA (in S&amp;S, VWRP)</strong></td><td>£333</td><td>£4,000 → £5,000 with bonus</td><td>AJ Bell Dodl LISA (0.15%/yr)</td><td>UK first home deposit</td></tr>
+            <tr><td><strong>S&amp;S ISA core (VWRP)</strong></td><td>£367</td><td>£4,400</td><td>Trading 212 S&amp;S ISA</td><td>Long-term growth</td></tr>
+            <tr><td><strong>UK Cash ISA buffer</strong></td><td>£100</td><td>£1,200</td><td>Trading 212 Cash ISA</td><td>Opportunity fund</td></tr>
+            <tr><td><strong>Total</strong></td><td>£800</td><td>£9,600 + £1,000 free</td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p>The LISA branch adds £1,000/year of free government money but locks you into either (a) buying a UK
+      first home under £450k, or (b) waiting until age 60.</p>
+
+    <h3>14.4 · The LISA decision tree</h3>
+    <p>A LISA gives you a 25% government bonus on contributions up to £4,000/year, but the penalty for
+      withdrawing for any non-qualifying purpose is 25% of the <em>withdrawn amount</em>: which means you lose
+      <strong>6.25% of your own capital plus all the bonus</strong>
+      <a href="https://www.gov.uk/lifetime-isa" target="_blank" rel="noopener">[GOV.UK LISA rules]</a>.</p>
+    <p>You <strong>must open before age 40</strong> (you're 31, so you have ~9 years of eligibility, but you
+      can only contribute while UK resident). If you become non-UK resident, the LISA stays open but you can't
+      add new money. Your money stays in and continues to grow.</p>
+
+    <div class="decision-tree">
+      <div class="decision-tree__q">Are you ≥80% confident you'll buy a UK home before age 60?</div>
+      <div class="decision-branches">
+        <div class="branch branch--yes">
+          <div class="branch__label">YES</div>
+          <div class="branch__action">Open LISA. Max it at £4,000/year. Free £1,000/year. Penalty becomes irrelevant because you'll use it for the home.</div>
+        </div>
+        <div class="branch branch--maybe">
+          <div class="branch__label">MAYBE (30–80%)</div>
+          <div class="branch__action">Open LISA, contribute small amount (£100–200/mo, not max). Risk a £100–200 penalty if it goes wrong; preserve optionality.</div>
+        </div>
+        <div class="branch branch--no">
+          <div class="branch__label">NO (&lt;30%)</div>
+          <div class="branch__action">Skip LISA. Put the £333/mo into S&amp;S ISA core or Cash ISA. Flexible money is worth more than 25% bonus + lock-in.</div>
+        </div>
+      </div>
+    </div>
+
+    <p><strong>My honest read on your situation:</strong> You said <em>"can't say what happens after [PSW]"</em>,
+      which suggests genuine uncertainty. The middle path is appropriate: <strong>open a LISA early in Phase 2
+      to "anchor" the under-40 eligibility, contribute a modest £100/mo (£1,200/yr → £300 free), and revisit at
+      the end of Year 1 of PSW.</strong> If you've decided you're staying, ramp up to £333/mo. If you've
+      decided to leave the UK, you can stop contributing and leave the money to grow.</p>
+
+    <p><strong>Critical:</strong> Trading 212 does <strong>not</strong> offer a LISA. For the LISA you'll need
+      a separate platform. Best options in 2026:</p>
+    <ul>
+      <li><a href="https://dodl.co.uk/" target="_blank" rel="noopener">AJ Bell Dodl LISA</a>: 0.15%/year platform fee, cheap, restricted to AJ Bell funds and themed portfolios. <strong>Cheapest in market.</strong></li>
+      <li><a href="https://www.hl.co.uk/investment-services/lifetime-isa" target="_blank" rel="noopener">Hargreaves Lansdown LISA</a>: 0.25%/year on funds, capped at £45/year on shares. Widest fund choice. Slightly more expensive but more flexibility.</li>
+      <li><a href="https://www.moneyboxapp.com/lifetime-isa/" target="_blank" rel="noopener">Moneybox LISA</a>: 0.45%/year + £1/month. Best app, but most expensive. Skip.</li>
+    </ul>
+
+    <p>For VWRP-style global ETF investing within a LISA, <strong>AJ Bell Dodl</strong> is the cheapest and
+      Dodl portfolios are perfectly adequate. (Inside the LISA you might end up holding a Dodl "All Investments"
+      or a tracker fund equivalent rather than VWRP specifically, but the cost difference is negligible at the
+      amounts involved.)</p>
+
+    <h3>14.5 · The first 30 days: a concrete onboarding checklist</h3>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <div class="card__label">Week 1</div>
+        <ul style="margin: 0.6rem 0 0;">
+          <li>Verify you have a UK current account (Monzo, Starling, or any UK bank) that the ISA can pull from</li>
+          <li>Sign up at trading212.com and open both a <strong>Stocks &amp; Shares ISA</strong> and a <strong>Cash ISA</strong> (free, ~15 minutes)</li>
+          <li>Verify identity using passport + BRP + proof of address</li>
+          <li>Sign the W-8BEN form (Trading 212 prompts you for this; reduces US dividend withholding tax from 30% to 15%); relevant for VWRP indirectly via its US holdings</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__label">Week 2</div>
+        <ul style="margin: 0.6rem 0 0;">
+          <li>Make a single £50 deposit to the Stocks &amp; Shares ISA as a test</li>
+          <li>Manually buy 1 share (or fractional share) of <code>VWRP</code> to confirm everything works</li>
+          <li>Verify the trade appears in your portfolio and the cash settles correctly</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__label">Week 3</div>
+        <ul style="margin: 0.6rem 0 0;">
+          <li>Set up monthly auto-invest of your target amount (£200–300) on the day after your stipend / income arrives</li>
+          <li>Configure 100% allocation to VWRP in the auto-invest pie</li>
+          <li>Set notifications to monthly (not daily); you don't need to see daily price changes</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__label">Week 4</div>
+        <ul style="margin: 0.6rem 0 0;">
+          <li>Bookmark only <strong>one</strong> financial-news source (<a href="https://monevator.com/" target="_blank" rel="noopener">Monevator UK</a>, or just the Trading 212 app)</li>
+          <li>Unfollow Nigerian stock-tip Twitter accounts because they will only distract you</li>
+          <li>Add a calendar reminder for <strong>April 6th each year</strong> ("New tax year: confirm ISA contribution plan")</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>14.6 · What the math says (compound projections)</h3>
+    <p>Assuming 7% nominal annual return (a reasonable long-run global equity assumption after fees):</p>
+
+    <div class="chart-card" data-aos="fade-up">
+      <div class="chart-card__title">Conservative vs Aggressive trajectory</div>
+      <div class="chart-card__sub">Toggle scenarios. Conservative: the plan as written. Aggressive: income scales to £2,500/mo savings by year 5+.</div>
+      <div class="chart-controls">
+        <button class="chart-toggle is-active" data-proj="both">Both</button>
+        <button class="chart-toggle" data-proj="cons">Conservative only</button>
+        <button class="chart-toggle" data-proj="agg">Aggressive only</button>
+      </div>
+      <div class="chart-canvas-wrap chart-canvas-wrap--tall"><canvas id="chartProjection"></canvas></div>
+    </div>
+
+    <p><strong>Conservative scenario, just doing the plan above:</strong></p>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Period</th><th>Action</th><th>Approximate portfolio value</th></tr></thead>
+          <tbody>
+            <tr><td>End of MSc (1 yr)</td><td>£200/mo × 12 = £2,400 in</td><td><strong>~£2,500</strong></td></tr>
+            <tr><td>End of PSW Year 1</td><td>+ £800/mo × 12 = £9,600 in</td><td><strong>~£13,000</strong></td></tr>
+            <tr><td>End of PSW Year 2</td><td>+ £800/mo × 12 = £9,600 in</td><td><strong>~£23,500</strong></td></tr>
+            <tr><td>End of Year 5 (PSW + 2 yrs at £1,200/mo, assumed)</td><td></td><td><strong>~£60,000</strong></td></tr>
+            <tr><td>End of Year 10 (assuming £1,500/mo avg)</td><td></td><td><strong>~£155,000</strong></td></tr>
+            <tr><td>End of Year 20 (assuming £1,500/mo avg)</td><td></td><td><strong>~£480,000</strong></td></tr>
+            <tr><td>End of Year 25 (age 56)</td><td></td><td><strong>~£780,000</strong></td></tr>
+            <tr><td>End of Year 30 (age 61)</td><td></td><td><strong>~£1,200,000</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p><strong>The takeaway:</strong> by your <strong>mid-50s</strong>, with this discipline alone, you'd be
+      <strong>financially independent</strong> (4% rule × £780k = £31k/year tax-free from the ISA, comfortable
+      in Nigeria, modest in UK). And this is the conservative case.</p>
+
+    <p><strong>Aggressive scenario, if your income scales (UK tech career, £60k → £100k+ over 10 years) and
+      you save £2,500/mo from Year 5+:</strong></p>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Period</th><th>Portfolio value</th></tr></thead>
+          <tbody>
+            <tr><td>End of Year 10</td><td><strong>~£240,000</strong></td></tr>
+            <tr><td>End of Year 15</td><td><strong>~£540,000</strong></td></tr>
+            <tr><td>End of Year 20</td><td><strong>~£1,050,000</strong></td></tr>
+            <tr><td>End of Year 25 (age 56)</td><td><strong>~£1,820,000</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p>In this scenario, you reach Lean FI (~£500k) by your early 40s and full FI (~£1M+) by your late 40s;
+      that is, <strong>early retirement is realistic</strong>.</p>
+
+    <h3>14.7 · What I deliberately did NOT include in your starting plan</h3>
+    <p>The following will become relevant later but are <strong>wrong for you right now</strong>:</p>
+    <ul>
+      <li><strong>SIPP (pension)</strong>: only worth opening when you start UK employment with an employer pension match. The free match is the only thing that makes a SIPP better than the ISA for you right now. Wait until you have a job offer.</li>
+      <li><strong>Individual stocks</strong> (US or UK): stock-picking with a small portfolio is a hobby, not a strategy. Revisit only after £20k+ in VWRP and only with a small "fun money" sleeve (max 5%).</li>
+      <li><strong>Nigerian stocks beyond a tiny optional slice</strong>: the ETF + maybe one MMF is enough Nigerian exposure. Avoid individual NGX names until you have a meaningful UK base.</li>
+      <li><strong>REITs, commodities, gold, crypto, bonds-other-than-emergency</strong>: distractions for now. Add them after £25k+ at most 5% each.</li>
+      <li><strong>Multiple ETFs</strong>: having VWRP + VUAG + VEVE + VHYL etc. just creates overlap. One global ETF is correct for now.</li>
+      <li><strong>Active management or stock-picking newsletters</strong>: pay for none of these. Free Monevator content is enough.</li>
+    </ul>
+
+    <h3>14.8 · Annual review checklist (mark April 6th in your calendar)</h3>
+    <p>Every UK tax year, on or near April 6th, spend 30 minutes reviewing:</p>
+    <ol class="steps">
+      <li class="step">Did I use my ISA allowance (£20k cap)? If not, can I top it up?</li>
+      <li class="step">If I have a LISA, did I get the £1,000 bonus this year?</li>
+      <li class="step">Is my emergency fund still equal to 3+ months of expenses? Top up if needed.</li>
+      <li class="step">Has my income changed? Adjust monthly contribution upward if so.</li>
+      <li class="step">Is my asset allocation still ~95–100% VWRP (or whatever you've set)? Rebalance only if drift exceeds 10%.</li>
+      <li class="step">Any major life changes (visa, relationship, dependents)? Update will/beneficiaries if applicable.</li>
+    </ol>
+    <p>That's it. No charts. No daily tinkering. Just the annual checkup.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 14B SUMMARY CARD
+============================================================ -->
+<section class="section" id="s14b">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 14B</span>
+      <h2 class="section__title">Quick Summary Card: Print This</h2>
+    </div>
+
+    <p>If you only remember one page from this whole document, make it this one.</p>
+
+    <article class="summary-card" id="summaryCard" data-aos="zoom-in">
+      <div class="summary-card__label">The Plan · May 2026 → undecided</div>
+      <h3 class="summary-card__title">One page. Print it. Stick it on the wall.</h3>
+
+      <h4>Prerequisites</h4>
+      <ul class="summary-list">
+        <li>No debt · <strong>Done ✓</strong></li>
+        <li>Emergency fund · <strong>Done ✓</strong></li>
+        <li>UK tax resident · <strong>Confirmed ✓</strong></li>
+      </ul>
+
+      <div class="summary-grid" style="margin-top: 1.5rem;">
+        <div class="summary-col">
+          <div class="summary-col__title">Phase 1 · Now → graduation</div>
+          <ul class="summary-list">
+            <li>Account: <strong>Trading 212 S&amp;S ISA</strong></li>
+            <li>Contribute: <strong>£200–300/mo</strong> via auto-invest</li>
+            <li>Buy: <strong>100% VWRP</strong> (Vanguard FTSE All-World)</li>
+            <li>Review: Once per month, max</li>
+          </ul>
+        </div>
+
+        <div class="summary-col">
+          <div class="summary-col__title">Phase 2 · A · Wait-and-see (default)</div>
+          <ul class="summary-list">
+            <li>£600/mo VWRP in S&amp;S ISA</li>
+            <li>£150/mo Cash ISA (5% AER)</li>
+            <li>£50/mo optional Nigeria slice</li>
+          </ul>
+        </div>
+
+        <div class="summary-col">
+          <div class="summary-col__title">Phase 2 · B · Committed to UK long-term</div>
+          <ul class="summary-list">
+            <li><strong>£333/mo VWRP in LISA</strong> (AJ Bell Dodl) → +£1,000/yr free</li>
+            <li>£367/mo VWRP in S&amp;S ISA</li>
+            <li>£100/mo Cash ISA</li>
+          </ul>
+          <p class="muted" style="margin: 0.6rem 0 0; color: rgba(255,255,255,0.7);">Decision point: end of PSW Year 1</p>
+        </div>
+
+        <div class="summary-col">
+          <div class="summary-col__title">What to avoid</div>
+          <ul class="summary-list">
+            <li>Stock-picking before £20k portfolio</li>
+            <li>Multiple overlapping ETFs</li>
+            <li>Daily checking</li>
+            <li>Nigerian stock tips on Twitter</li>
+            <li>Crypto, options, gold &gt; 5% each</li>
+            <li>Withdrawing from ISA except for true emergency</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="summary-print-btn" id="summaryPrintBtn">Print this card</button>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 15 UNIVERSAL RULES
+============================================================ -->
+<section class="section" id="s15">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 15</span>
+      <h2 class="section__title">The Universal Rules That Apply Regardless of Your Specifics</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>What rules hold true no matter what changes in my life?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>Ten that never go out of style. Worth re-reading whenever you feel tempted to do something clever.</div>
+      </div>
+    </div>
+
+    <ol class="principles">
+      <li class="principle"><div class="principle__body"><strong>Use tax wrappers first.</strong> ISA before any taxable account.</div></li>
+      <li class="principle"><div class="principle__body"><strong>Keep fees below 0.3% blended.</strong> Above that, fees eat compounding.</div></li>
+      <li class="principle"><div class="principle__body"><strong>Diversify globally.</strong> Single-country bets are the most common amateur mistake.</div></li>
+      <li class="principle"><div class="principle__body"><strong>Automate everything.</strong> Set monthly contributions to leave your account on payday, automatically. Remove willpower from the equation.</div></li>
+      <li class="principle"><div class="principle__body"><strong>Don't trade.</strong> Buying once a month and never selling beats buying and selling once a week, almost always.</div></li>
+      <li class="principle"><div class="principle__body"><strong>Increase contributions, not complexity.</strong> Going from £500/month to £750/month matters more than picking a fancier ETF.</div></li>
+      <li class="principle"><div class="principle__body"><strong>Hold through every crash.</strong> Markets fall 30–50% roughly every 7–10 years. If you sell, you lose. If you keep DCAing, the crashes become <em>gifts</em>.</div></li>
+      <li class="principle"><div class="principle__body"><strong>Track your savings rate, not your portfolio value.</strong> Savings rate = (income - expenses) / income. Aim for 30%+ early career, 50%+ if you really want FI.</div></li>
+      <li class="principle"><div class="principle__body"><strong>Income matters more than returns at your stage.</strong> Spend at least as much time on getting promoted, learning skills, building income as on portfolio.</div></li>
+      <li class="principle"><div class="principle__body"><strong>Talk to a real adviser when stakes are real.</strong> Once you have £75k+ invested, or you marry, or you have kids, or you change visa status, <em>that</em> is when you pay for professional advice. Currently, that day is probably ~2–4 years away.</div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 16 QUESTIONS TO ANSWER
+============================================================ -->
+<section class="section" id="s16">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 16</span>
+      <h2 class="section__title">Questions I Need You to Answer to Tailor This Further</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>What do you still need from me to sharpen this further?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>Twelve questions, grouped into seven topics. Answer them when you can, since each one materially changes part of the plan.</div>
+      </div>
+    </div>
+
+    <div class="q-cat">A · Visa &amp; Geography</div>
+    <div class="q-item"><span class="q-item__num">Q1.</span><strong>Your visa status post-MSc.</strong> Are you planning to stay on the Graduate Route visa (2 years)? Get a Skilled Worker visa through a UK employer? Return to Nigeria after MSc? Move to a third country (Canada, EU, etc.)? This determines which accounts to maximise, whether LISA is worth it, whether SIPP makes sense, how seriously to hedge to GBP.</div>
+
+    <div class="q-cat">B · Cash Flow</div>
+    <div class="q-item"><span class="q-item__num">Q2.</span><strong>What's your approximate monthly investible amount in the UK?</strong> Even a range: £100–£300? £500–£1,000? £1,500+? (For students with part-time work, often £100–£500. For full-time post-MSc, can be £1,000+.)</div>
+    <div class="q-item"><span class="q-item__num">Q3.</span><strong>Do you have any current UK income?</strong> (Part-time work: up to 20 hours/week in term, full-time in holidays is allowed on a student visa.)</div>
+    <div class="q-item"><span class="q-item__num">Q4.</span><strong>Do you have any current expenses I should know about?</strong> (Family support to Nigeria, debts, dependants?)</div>
+
+    <div class="q-cat">C · Safety Net</div>
+    <div class="q-item"><span class="q-item__num">Q5.</span><strong>Do you currently have an emergency fund?</strong> And roughly how big?</div>
+    <div class="q-item"><span class="q-item__num">Q6.</span><strong>Any debts</strong> (credit cards, student loan type: UK government vs Nigerian/private, family loans)?</div>
+
+    <div class="q-cat">D · Goal Specificity</div>
+    <div class="q-item"><span class="q-item__num">Q7.</span><strong>What is your rough "early retirement" target, age and lifestyle?</strong> Not exact numbers needed, just direction: "Lean FIRE at 50, modest UK life" (~£25k/year) · "Regular FIRE at 55, comfortable UK or relocation" (~£40k/year) · "Fat FIRE later, location undecided" (£75k+/year).</div>
+
+    <div class="q-cat">E · Risk Comfort</div>
+    <div class="q-item"><span class="q-item__num">Q8.</span><strong>If your portfolio dropped 40% in a year, would you:</strong> Panic-sell? Hold and stop adding? Keep DCAing as planned? Aggressively buy more?</div>
+
+    <div class="q-cat">F · Connections to Nigeria</div>
+    <div class="q-item"><span class="q-item__num">Q9.</span><strong>Do you still have a Nigerian bank account / domiciliary account?</strong></div>
+    <div class="q-item"><span class="q-item__num">Q10.</span><strong>Family financial support obligations</strong> (sending money home, supporting siblings, etc.)?</div>
+    <div class="q-item"><span class="q-item__num">Q11.</span><strong>Do you own / co-own any property in Nigeria?</strong></div>
+
+    <div class="q-cat">G · Career Direction</div>
+    <div class="q-item"><span class="q-item__num">Q12.</span><strong>Your career field post-MSc</strong>: software engineering specialisation? Already have job offers? Salary expectations?</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 17 THE ONE THING
+============================================================ -->
+<section class="section" id="s17">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__number">SECTION 17</span>
+      <h2 class="section__title">The Single Most Important Thing</h2>
+    </div>
+
+    <div class="chat" data-chat>
+      <div class="chat__bubble chat__bubble--user">
+        <div class="chat__avatar">U</div>
+        <div class="chat__body"><div class="chat__author">You</div>If I forget everything else, what's the one thing I should remember?</div>
+      </div>
+      <div class="chat__bubble chat__bubble--advisor">
+        <div class="chat__avatar">A</div>
+        <div class="chat__body"><div class="chat__author">Advisor</div>Open the accounts. Now. Everything else can be optimised over time.</div>
+      </div>
+    </div>
+
+    <div class="zoom-callout" data-zoom>
+      <div class="zoom-callout__label">If you remember one thing</div>
+      <p class="zoom-callout__quote">
+        For someone in your exact position (Nigerian, MSc in UK, 31, with NI number), your single biggest
+        financial decision is to <strong>open a Stocks &amp; Shares ISA and a LISA before your next
+        birthday</strong>, and start contributing to both with whatever you can afford, even if it's £50/month
+        each.
+      </p>
+    </div>
+
+    <p><strong>Why:</strong> The compounding clock on your ISA tax-free shelter has already started even if you
+      don't use it. The LISA's 9-year contribution window (until age 40) will not pause. Every month you don't
+      use these wrappers is allowance you literally cannot get back.</p>
+
+    <p>Everything else (which ETF, which broker, how much, how to balance) can be optimised over time.
+      Opening the accounts and starting the contributions cannot be delayed for free.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     SOURCES
+============================================================ -->
+<section class="section" id="sources">
+  <div class="container container--wide">
+    <div class="sources">
+      <h2 class="sources__title">Sources &amp; Further Reading</h2>
+      <p class="sources__sub">Every governmental rule, claim, or platform recommendation cited in this document, in one place. Verify all current limits and rates before significant decisions.</p>
+
+      <ul class="sources__list">
+        <li class="sources__item"><span class="src-cat">UK Government · ISAs</span><a href="https://www.gov.uk/individual-savings-accounts" target="_blank" rel="noopener">gov.uk: Individual Savings Accounts</a></li>
+        <li class="sources__item"><span class="src-cat">UK Government · LISA</span><a href="https://www.gov.uk/lifetime-isa" target="_blank" rel="noopener">gov.uk: Lifetime ISA rules</a></li>
+        <li class="sources__item"><span class="src-cat">UK Government · Pensions</span><a href="https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief" target="_blank" rel="noopener">gov.uk: Pension tax relief</a></li>
+        <li class="sources__item"><span class="src-cat">UK Government · Student Loans</span><a href="https://www.gov.uk/repaying-your-student-loan" target="_blank" rel="noopener">gov.uk: Repaying your student loan</a></li>
+        <li class="sources__item"><span class="src-cat">UK Government · Inheritance</span><a href="https://www.gov.uk/inheritance-tax" target="_blank" rel="noopener">gov.uk: Inheritance Tax</a></li>
+        <li class="sources__item"><span class="src-cat">UK Government · CGT</span><a href="https://www.gov.uk/capital-gains-tax" target="_blank" rel="noopener">gov.uk: Capital Gains Tax</a></li>
+        <li class="sources__item"><span class="src-cat">UK Government · Dividend Tax</span><a href="https://www.gov.uk/tax-on-dividends" target="_blank" rel="noopener">gov.uk: Tax on dividends</a></li>
+        <li class="sources__item"><span class="src-cat">UK Government · SRT</span><a href="https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt" target="_blank" rel="noopener">gov.uk: Statutory Residence Test (RDR3)</a></li>
+        <li class="sources__item"><span class="src-cat">UK Government · Non-Dom Reform</span><a href="https://www.gov.uk/government/publications/reforming-the-taxation-of-non-uk-domiciled-individuals" target="_blank" rel="noopener">HMRC: Non-dom reform</a></li>
+        <li class="sources__item"><span class="src-cat">UK Government · NG Tax Treaty</span><a href="https://www.gov.uk/government/publications/nigeria-tax-treaties" target="_blank" rel="noopener">gov.uk: UK-Nigeria tax treaty</a></li>
+        <li class="sources__item"><span class="src-cat">US Government · W-8BEN</span><a href="https://www.irs.gov/forms-pubs/about-form-w-8-ben" target="_blank" rel="noopener">IRS: Form W-8BEN</a></li>
+        <li class="sources__item"><span class="src-cat">UK Government · Premium Bonds</span><a href="https://www.nsandi.com/products/premium-bonds" target="_blank" rel="noopener">NS&amp;I: Premium Bonds</a></li>
+        <li class="sources__item"><span class="src-cat">Nigeria Government · SEC</span><a href="https://sec.gov.ng/" target="_blank" rel="noopener">SEC Nigeria: Capital Market Operators</a></li>
+
+        <li class="sources__item"><span class="src-cat">Industry · NG MMFs</span><a href="https://nairametrics.com/2026/04/07/money-market-funds-hit-n5-46-trillion-as-stl-tops-ytd-returns-at-20-24/" target="_blank" rel="noopener">Nairametrics: MMFs hit ₦5.46 trillion (Apr 2026)</a></li>
+        <li class="sources__item"><span class="src-cat">Industry · MMF Ranking</span><a href="https://nairametrics.com/2026/05/23/top-performing-money-market-fund-md-ceos-as-of-q1-2026/" target="_blank" rel="noopener">Nairametrics: Top MMFs Q1 2026</a></li>
+        <li class="sources__item"><span class="src-cat">Industry · NG REITs</span><a href="https://nairametrics.com/2026/04/06/uhomes-reitf-vs-updc-reitf-which-offers-better-value-in-2026/" target="_blank" rel="noopener">Nairametrics: UHOMREIT vs UPDCREIT (Apr 2026)</a></li>
+        <li class="sources__item"><span class="src-cat">Industry · UPDC Q1</span><a href="https://africanfinancials.com/document/ng-updcrei-2026-ir-q1/" target="_blank" rel="noopener">African Financials: UPDC REIT Q1 2026</a></li>
+        <li class="sources__item"><span class="src-cat">Industry · SFS REIT</span><a href="https://propertyaccess.ng/sfs-reit-profit-jumps-762-to-n4-1-billion/" target="_blank" rel="noopener">Property Access: SFS REIT profit jumps 762%</a></li>
+        <li class="sources__item"><span class="src-cat">Industry · Risevest SEC</span><a href="https://technext24.com/2026/02/19/risevest-secures-sec-licence/" target="_blank" rel="noopener">Technext: Risevest secures SEC licence (Feb 2026)</a></li>
+        <li class="sources__item"><span class="src-cat">Industry · Coreum</span><a href="https://www.onlinemarketplaces.com/articles/co-investment-platform-coreum-launches-in-nigeria/" target="_blank" rel="noopener">Online Marketplaces: Coreum launch</a></li>
+
+        <li class="sources__item"><span class="src-cat">Tool · ISA Broker</span><a href="https://www.trading212.com/" target="_blank" rel="noopener">Trading 212</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · ISA Broker</span><a href="https://www.investengine.com/" target="_blank" rel="noopener">InvestEngine</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · ISA Broker</span><a href="https://www.vanguardinvestor.co.uk/" target="_blank" rel="noopener">Vanguard UK</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · LISA Broker</span><a href="https://dodl.co.uk/" target="_blank" rel="noopener">AJ Bell Dodl</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · LISA Broker</span><a href="https://www.hl.co.uk/investment-services/lifetime-isa" target="_blank" rel="noopener">Hargreaves Lansdown LISA</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · LISA Broker</span><a href="https://www.moneyboxapp.com/lifetime-isa/" target="_blank" rel="noopener">Moneybox LISA</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · Broker</span><a href="https://www.interactivebrokers.co.uk/" target="_blank" rel="noopener">Interactive Brokers UK</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · Broker</span><a href="https://freetrade.io/" target="_blank" rel="noopener">Freetrade</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · Broker</span><a href="https://lightyear.com/uk" target="_blank" rel="noopener">Lightyear</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · NG Broker</span><a href="https://www.investbamboo.com/" target="_blank" rel="noopener">Bamboo</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · NG MMF</span><a href="https://www.stanbicibtcassetmanagement.com/" target="_blank" rel="noopener">Stanbic IBTC Asset Management</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · NG MMF</span><a href="https://armassetmgt.com/" target="_blank" rel="noopener">ARM Investment Managers</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · NG MMF</span><a href="https://cordros.com/asset-management/mutual-funds" target="_blank" rel="noopener">Cordros Asset Management</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · NG MMF Aggregator</span><a href="https://cowrywise.com/" target="_blank" rel="noopener">Cowrywise</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · NG MMF Aggregator</span><a href="https://i-invest.com.ng/" target="_blank" rel="noopener">i-invest by Parthian Partners</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · NG Aggregator</span><a href="https://trove.finance/" target="_blank" rel="noopener">Trove Finance</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · NG Savings</span><a href="https://www.piggyvest.com/" target="_blank" rel="noopener">PiggyVest</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · NG Real Estate</span><a href="https://risevest.com/" target="_blank" rel="noopener">Risevest</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · NG Real Estate</span><a href="https://www.realvest.ng/" target="_blank" rel="noopener">RealVest</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · FX Transfer</span><a href="https://wise.com/" target="_blank" rel="noopener">Wise (TransferWise)</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · FX Transfer</span><a href="https://www.sendwave.com/" target="_blank" rel="noopener">Sendwave</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · FX Transfer</span><a href="https://lemonadefinance.com/" target="_blank" rel="noopener">Lemonade Finance</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · FX</span><a href="https://www.revolut.com/" target="_blank" rel="noopener">Revolut</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · UK Savings</span><a href="https://www.marcus.co.uk/" target="_blank" rel="noopener">Marcus by Goldman Sachs</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · UK Savings</span><a href="https://www.chase.co.uk/gb/en/savings/" target="_blank" rel="noopener">Chase UK Saver</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · UK Savings</span><a href="https://getchip.uk/" target="_blank" rel="noopener">Chip</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · Will</span><a href="https://farewill.com/" target="_blank" rel="noopener">Farewill</a></li>
+        <li class="sources__item"><span class="src-cat">Tool · Will</span><a href="https://makeawillonline.co.uk/" target="_blank" rel="noopener">Make a Will Online</a></li>
+        <li class="sources__item"><span class="src-cat">Reading · UK Investing</span><a href="https://monevator.com/" target="_blank" rel="noopener">Monevator: UK passive investing blog</a></li>
+        <li class="sources__item"><span class="src-cat">Fund · Core Holding</span><a href="https://www.vanguard.co.uk/professional/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating" target="_blank" rel="noopener">Vanguard FTSE All-World UCITS ETF (VWRP)</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <h3>Personal Wealth Strategy: Foundation</h3>
+      <p>A document built for a 31-year-old Nigerian MSc student in the UK. This is a foundation, not financial advice. Verify all current limits and rates on gov.uk and consult a qualified UK tax adviser/IFA before significant decisions.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Document</h4>
+      <ul>
+        <li><a href="#s0">Foreword</a></li>
+        <li><a href="#s14">Tailored plan</a></li>
+        <li><a href="#s14b">Summary card</a></li>
+        <li><a href="#s17">The one thing</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Key topics</h4>
+      <ul>
+        <li><a href="#s4">UK tax wrappers</a></li>
+        <li><a href="#s9-5">Nigerian MMFs</a></li>
+        <li><a href="#s9-6">Nigerian REITs</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>External</h4>
+      <ul>
+        <li><a href="https://www.gov.uk/individual-savings-accounts" target="_blank" rel="noopener">gov.uk ISAs</a></li>
+        <li><a href="https://sec.gov.ng/" target="_blank" rel="noopener">SEC Nigeria</a></li>
+        <li><a href="https://monevator.com/" target="_blank" rel="noopener">Monevator</a></li>
+        <li><a href="https://wise.com/" target="_blank" rel="noopener">Wise</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    Last updated 26 May 2026 · This document is a foundation, not financial advice.
+  </div>
+</footer>
+
+<!-- ============================================================
+     Floating UI: back-to-top + TOC drawer
+============================================================ -->
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<!-- ============================================================
+     SCRIPTS
+============================================================ -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+<script src="assets/script.js?v=2" defer></script>
+
+</body>
+</html>
